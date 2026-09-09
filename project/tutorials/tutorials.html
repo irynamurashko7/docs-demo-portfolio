@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Tutorials :: Core Platform Documentation</title>
+    <link rel="canonical" href="https://irynamurashko7.github.io/docs-demo-portfolio/project/tutorials/tutorials.html">
+    <link rel="prev" href="../index.html">
+    <link rel="next" href="set-up-product/set-up-product.html">
+    <meta name="generator" content="Antora 3.1.9">
+    <link rel="stylesheet" href="../../_theme/css/site.css">
+<link rel="icon" href="../../_theme/img/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="../../_theme/css/admonitions.css">
+<link rel="stylesheet" href="https://unpkg.com/bpmn-js/dist/assets/bpmn-js.css">
+<link rel="stylesheet" href="../../_theme/css/tiles.css">
+<script src="https://unpkg.com/bpmn-js/dist/bpmn-viewer.development.js"></script>  </head>
+  <body class="article">
+<script type="module">import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs'; mermaid.initialize({"startOnLoad":true});</script><header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://irynamurashko7.github.io/docs-demo-portfolio">Core Platform Documentation</a>
+      <div class="navbar-item search hide-for-print">
+        <div id="search-field" class="field">
+          <input id="search-input" type="text" placeholder="Search the docs">
+        </div>
+      </div>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item feedback-form" href="#" onclick="linkToForm();">&#x1F4AD Send feedback</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<script>
+  function linkToForm() {
+    window.open("https://docs.google.com/forms/d/e/1FAIpQLScvBMxC9JuhgvpWutLqqXD8kZyblFRfpBMGI8RIhKBRQkbCAw/viewform?entry.1314213330=" + window.location.href);
+  }
+</script>
+<div class="body">
+<div class="nav-container" data-component="project" data-version="master">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../index.html">Project</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">Introduction</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item is-current-page" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="tutorials.html">Tutorials</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="set-up-product/set-up-product.html">Set up your product</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="set-up-product/set-up-prepaid-product.html">Prepaid</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="set-up-product/configure-prepaid-partner.html">Configure a Partner</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="set-up-product/configure-prepaid-offering.html">Configure an Offering</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="set-up-product/configure-prepaid-pricing-plan.html">Configure a Pricing Plan</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="set-up-product/sc-product-purchase.html">Integrate your product purchase into the Shopping Cart</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Usage-based</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Free</span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Set up an Application</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Set up your product configuration</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Set up your product discovery</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Configure your product marketing</span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../how-to/how-to-guides.html">How-to Guides</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../how-to/partners/manage-partners.html">Manage Partners</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../how-to/partners/update-partner.html">Update</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../how-to/partners/update-default-purchase-settings.html">Update default purchase settings</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../how-to/offerings/manage-offerings.html">Manage Offerings</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../how-to/offerings/create-offering.html">Create</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../how-to/offerings/retrieve-offering.html">Retrieve</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../how-to/offerings/update-offering.html">Update</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../how-to/offerings/update-offering.html#add-categories">Add categories</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../how-to/offerings/update-offering.html#update-category-list">Update category list</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../how-to/offerings/update-offering.html#remove-categories">Remove categories</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../how-to/offerings/update-offering.html#activate-deactivate">Activate/deactivate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../how-to/offerings/update-offering.html##allow-restrict-multiple-quantity">Allow/restrict multiple quantity for items</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../how-to/offerings/update-offering.html#rename">Rename</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../how-to/offerings/update-offering.html#enable-usage-based-configuration">Enable usage-based configuration</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../how-to/offerings/delete-offering.html">Delete</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Customize your Shopping Cart integration</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Manage assets</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Manage billing strategies</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Manage categories</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Manage localization</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Manage orders</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Manage parameters</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Manage price calculation rules</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Manage pricing plan durations</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Manage pricing plans</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Manage subscriptions</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Manage webhooks</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Manage widgets</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Work with prices</span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../explanations/explanations.html">Explanations</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Assets</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Configuration</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Localization</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../explanations/offerings/overview.html">Offerings</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Orders</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../explanations/pricing-plans/overview.html">Pricing Plans</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../explanations/shopping-cart/overview.html">Shopping Cart</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../explanations/shopping-cart/flows/shopping-cart-flows.html">Flows</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../explanations/shopping-cart/flows/high-level.html">High-level Flow</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Product Purchase Flow</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Renewal Flow</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Update Flow</span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Widgets</span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Subscriptions</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../explanations/ui-fragments/overview.html">UI fragments</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Applications</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Embedded Panels</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Landing Pages</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Shared UI</span>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Glossary</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../glossary/glossary.html">Glossary</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../references/references.html">References</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">API Specifications</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../references/api/create-offering.html">Create an Offering</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Default Widgets</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../references/events/events.html">Events</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Browser Push Notifications</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Event Bus</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Message Bus</span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Localization Resources</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Shared Libraries</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../references/webhooks/webhooks.html">Webhooks</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../references/webhooks/shopping-cart-webhooks.html">Shopping Cart Webhooks</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../changelog.html">Changelog</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Project</span>
+    <span class="version">master</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../index.html">Project</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">master</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Project</a></li>
+    <li><a href="tutorials.html">Tutorials</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="">Edit this Page</a></div>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Tutorials</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>In these tutorials, you will learn how to integrate a simple product into the Core Platform and the ways to start customizing your integration.</p>
+</div>
+<div class="paragraph">
+<p>This section contains a set of basic integration steps each partner needs to follow.</p>
+</div>
+<div class="paragraph">
+<p>The completed tutorials should provide you with the following results:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Basic understanding of the Core Platform.</p>
+</li>
+<li>
+<p>Product integrated into the Core Platform with basic settings.</p>
+</li>
+<li>
+<p>Information on how you can start customizing your integration.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="before-you-start"><a class="anchor" href="#before-you-start"></a>Before you start</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Before proceeding with these tutorials, make sure to:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Check the following documentation:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://www.example.com">Project Architecture</a> documentation: to learn about the authorization, transport, and other services used in our microservice solutions.</p>
+</li>
+<li>
+<p>Introduction: to learn what the Core Platform is and its role in the Project ecosystem.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Obtain access according to <a href="https://www.example.com" target="_blank" rel="noopener">this document</a>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Check the <a href="https://www.example.com" target="_blank" rel="noopener">Product-Specific Architecture Links</a> documentation to learn if there are integration cases similar to yours.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="integration"><a class="anchor" href="#integration"></a>Integration</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>If you are new to the Core Platform, please follow these tutorials to start the integration and learn more about the system:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><a href="set-up-product/set-up-product.html" class="xref page">Set up your product</a>.</p>
+</li>
+<li>
+<p>Set up an Application.</p>
+</li>
+<li>
+<p>Set up your product configuration.</p>
+</li>
+<li>
+<p>Set up your product discovery.</p>
+</li>
+<li>
+<p>Configure your product marketing.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="../index.html">Introduction</a></span>
+  <span class="next"><a href="set-up-product/set-up-product.html">Set up your product</a></span>
+</nav>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script id="site-script" src="../../_theme/js/site.js" data-ui-root-path="../../_theme"></script>
+<script async src="../../_theme/js/vendor/highlight.js"></script>
+<script src="../../_theme/js/vendor/lunr.js"></script>
+<script src="../../_theme/js/search-ui.js" id="search-ui-script" data-site-root-path="../.." data-snippet-length="100" data-stylesheet="../../_theme/css/search.css"></script>
+<script async src="../../search-index.js"></script>
+<script src="../../_theme/js/preloader.js"></script>  </body>
+</html>

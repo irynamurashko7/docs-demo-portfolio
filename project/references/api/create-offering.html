@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Create an Offering :: Core Platform Documentation</title>
+    <link rel="canonical" href="https://irynamurashko7.github.io/docs-demo-portfolio/project/references/api/create-offering.html">
+    <link rel="prev" href="../references.html">
+    <link rel="next" href="../events/events.html">
+    <meta name="generator" content="Antora 3.1.9">
+    <link rel="stylesheet" href="../../../_theme/css/site.css">
+<link rel="icon" href="../../../_theme/img/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="../../../_theme/css/admonitions.css">
+<link rel="stylesheet" href="https://unpkg.com/bpmn-js/dist/assets/bpmn-js.css">
+<link rel="stylesheet" href="../../../_theme/css/tiles.css">
+<script src="https://unpkg.com/bpmn-js/dist/bpmn-viewer.development.js"></script>  </head>
+  <body class="article">
+<script type="module">import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs'; mermaid.initialize({"startOnLoad":true});</script><header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://irynamurashko7.github.io/docs-demo-portfolio">Core Platform Documentation</a>
+      <div class="navbar-item search hide-for-print">
+        <div id="search-field" class="field">
+          <input id="search-input" type="text" placeholder="Search the docs">
+        </div>
+      </div>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item feedback-form" href="#" onclick="linkToForm();">&#x1F4AD Send feedback</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<script>
+  function linkToForm() {
+    window.open("https://docs.google.com/forms/d/e/1FAIpQLScvBMxC9JuhgvpWutLqqXD8kZyblFRfpBMGI8RIhKBRQkbCAw/viewform?entry.1314213330=" + window.location.href);
+  }
+</script>
+<div class="body">
+<div class="nav-container" data-component="project" data-version="master">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../../index.html">Project</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../index.html">Introduction</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../tutorials/tutorials.html">Tutorials</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../tutorials/set-up-product/set-up-product.html">Set up your product</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../tutorials/set-up-product/set-up-prepaid-product.html">Prepaid</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tutorials/set-up-product/configure-prepaid-partner.html">Configure a Partner</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tutorials/set-up-product/configure-prepaid-offering.html">Configure an Offering</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tutorials/set-up-product/configure-prepaid-pricing-plan.html">Configure a Pricing Plan</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tutorials/set-up-product/sc-product-purchase.html">Integrate your product purchase into the Shopping Cart</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Usage-based</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Free</span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Set up an Application</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Set up your product configuration</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Set up your product discovery</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Configure your product marketing</span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../how-to/how-to-guides.html">How-to Guides</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../how-to/partners/manage-partners.html">Manage Partners</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../how-to/partners/update-partner.html">Update</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../how-to/partners/update-default-purchase-settings.html">Update default purchase settings</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../how-to/offerings/manage-offerings.html">Manage Offerings</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../how-to/offerings/create-offering.html">Create</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../how-to/offerings/retrieve-offering.html">Retrieve</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../how-to/offerings/update-offering.html">Update</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../how-to/offerings/update-offering.html#add-categories">Add categories</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../how-to/offerings/update-offering.html#update-category-list">Update category list</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../how-to/offerings/update-offering.html#remove-categories">Remove categories</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../how-to/offerings/update-offering.html#activate-deactivate">Activate/deactivate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../how-to/offerings/update-offering.html##allow-restrict-multiple-quantity">Allow/restrict multiple quantity for items</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../how-to/offerings/update-offering.html#rename">Rename</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../how-to/offerings/update-offering.html#enable-usage-based-configuration">Enable usage-based configuration</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../how-to/offerings/delete-offering.html">Delete</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Customize your Shopping Cart integration</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Manage assets</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Manage billing strategies</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Manage categories</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Manage localization</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Manage orders</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Manage parameters</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Manage price calculation rules</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Manage pricing plan durations</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Manage pricing plans</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Manage subscriptions</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Manage webhooks</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Manage widgets</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Work with prices</span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../explanations/explanations.html">Explanations</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Assets</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Configuration</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Localization</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../explanations/offerings/overview.html">Offerings</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Orders</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../explanations/pricing-plans/overview.html">Pricing Plans</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../explanations/shopping-cart/overview.html">Shopping Cart</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../explanations/shopping-cart/flows/shopping-cart-flows.html">Flows</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../explanations/shopping-cart/flows/high-level.html">High-level Flow</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Product Purchase Flow</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Renewal Flow</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Update Flow</span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Widgets</span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Subscriptions</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../explanations/ui-fragments/overview.html">UI fragments</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Applications</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Embedded Panels</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Landing Pages</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Shared UI</span>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Glossary</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../glossary/glossary.html">Glossary</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../references.html">References</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">API Specifications</span>
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="create-offering.html">Create an Offering</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Default Widgets</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../events/events.html">Events</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Browser Push Notifications</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Event Bus</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Message Bus</span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Localization Resources</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Shared Libraries</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../webhooks/webhooks.html">Webhooks</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../webhooks/shopping-cart-webhooks.html">Shopping Cart Webhooks</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../changelog.html">Changelog</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Project</span>
+    <span class="version">master</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../../index.html">Project</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../index.html">master</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../index.html">Project</a></li>
+    <li><a href="../references.html">References</a></li>
+    <li>API Specifications</li>
+    <li><a href="create-offering.html">Create an Offering</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="">Edit this Page</a></div>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Create an Offering</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="admonitionblock note info">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="info"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>This endpoint description serves solely to show an API specification structure.</p>
+</div>
+<div class="paragraph">
+<p>Yet, the best practice is to use API documentation tools (e.g., Swagger) to produce an automatically generated specification.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Creates a new Offering entity for a Partner. Read more about Offerings <a href="../../explanations/offerings/overview.html" class="xref page">here</a>.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Method</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>POST</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Path</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>/offering/create</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Auth</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Active Directory credentials (Backend API)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="request"><a class="anchor" href="#request"></a>Request</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 12.5%;">
+<col style="width: 12.5%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Field</th>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-left valign-top">Required</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>name</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Display name of the Offering.</p>
+</div>
+<div class="paragraph">
+<p>1-100 characters.</p>
+</div>
+<div class="paragraph">
+<p>Application areas:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Shown to customers on Project pages when the Core Platform cannot retrieve its localization resource.</p>
+</li>
+<li>
+<p>Used to generate the Offering slug, which will be used in customer-facing URLs and UI fragment configuration.</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>partnerId</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">string (UUIDv4)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <code>id</code> of the Partner entity to which this Offering belongs.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>type</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">enum</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Offering type. Determines which billing behavior applies to this Offering.</p>
+</div>
+<div class="paragraph">
+<p>Cannot be changed after creation.</p>
+</div>
+<div class="paragraph">
+<p>Possible values:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>SUBSCRIPTION</code> - customer gets access on a regular (subscription) basis</p>
+</li>
+<li>
+<p><code>SINGLE_PURCHASE</code> - customer gets access once and uses it indefinitely</p>
+</li>
+<li>
+<p><code>USAGE_BASED</code> - customer pays later for the actual usage</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Read more <a href="../../explanations/offerings/overview.html#offering-types" class="xref page">here</a>.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>description</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Internal description of the Offering.</p>
+<p class="tableblock">Not shown to customers.</p>
+<p class="tableblock">Up to 500 characters.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="sect2">
+<h3 id="example-requests"><a class="anchor" href="#example-requests"></a>Example requests</h3>
+<div class="listingblock">
+<div class="title">CreateSubscriptionOffering</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">{
+  "name": "Business Phone Line",
+  "partnerId": "2b6efdca-3a92-415f-b819-1d0d4df1eae2",
+  "type": "SUBSCRIPTION",
+  "description": "Recurring phone line service for business customers"
+}</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">CreateSinglePurchaseOffering</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">{
+  "name": "Voicemail Setup Fee",
+  "partnerId": "2b6efdca-3a92-415f-b819-1d0d4df1eae2",
+  "type": "SINGLE_PURCHASE",
+  "description": "One-time setup fee for voicemail configuration"
+}</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">CreateUsageBasedOffering</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">{
+  "name": "Pay-per-minute Long Distance",
+  "partnerId": "2b6efdca-3a92-415f-b819-1d0d4df1eae2",
+  "type": "USAGE_BASED",
+  "description": "Billed according to actual minutes used"
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="response"><a class="anchor" href="#response"></a>Response</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><code>201 Created</code> on success.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 28.5714%;">
+<col style="width: 14.2857%;">
+<col style="width: 57.1429%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Field</th>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>id</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">string (UUIDv4)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Unique identifier of the created Offering entity. Use this for subsequent update, retrieve, and delete calls, as well as when creating associated pricing plans.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>slug</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Unique, human-readable identifier of the Offering generated from <code>name</code>. Used in customer-facing URLs and UI fragment configuration.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>name</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The submitted display name of the Offering.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>description</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The submitted internal description of the Offering.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>partnerId</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">string (UUIDv4)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The submitted <code>id</code> of the Partner entity to which this Offering belongs.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>type</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">enum</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>The submitted Offering type.</p>
+</div>
+<div class="paragraph">
+<p>Possible values:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>SUBSCRIPTION</code> - customer gets access on a regular (subscription) basis</p>
+</li>
+<li>
+<p><code>SINGLE_PURCHASE</code> - customer gets access once and uses it indefinitely</p>
+</li>
+<li>
+<p><code>USAGE_BASED</code> - customer pays later for the actual usage</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Read more <a href="../../explanations/offerings/overview.html#offering-types" class="xref page">here</a>.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>status</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">enum</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Defines whether the Offering is active and customers can purchase it.</p>
+</div>
+<div class="paragraph">
+<p>Possible values:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>DRAFT</code> - only the owner team of the associated Partner entity can see the Offering</p>
+</li>
+<li>
+<p><code>ACTIVE</code> - customers see the Offering and can purchase it</p>
+</li>
+<li>
+<p><code>INACTIVE</code> - customers do not see the Offering</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><em>New Offerings are created as <code>DRAFT</code> until explicitly activated.</em></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>multipleQuantity</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">boolean</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Enables/disables the possibility to purchase several equal items associated with your Offering.</p>
+</div>
+<div class="paragraph">
+<p>Possible values:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>true</code> - customers can purchase several equal items</p>
+</li>
+<li>
+<p><code>false</code> - customers cannot purchase several equal items (e.g, add the same phone number several times)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Defaults to <code>false</code>. Can be changed later (see <a href="../../how-to/offerings/update-offering.html" class="xref page">Update an Offering</a> document).</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>categoryIds</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">array of strings</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>id</code> values of the categories to assign this Offering to. Used to group items of the Project pages.<br>
+Empty array means that none were assigned.<br>
+Categories can be added or removed later. Read more <a href="../../how-to/offerings/update-offering.html" class="xref page">here</a>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>createdAt</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">string (ISO 8601)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Timestamp when the Offering was created.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="sect2">
+<h3 id="example-responses"><a class="anchor" href="#example-responses"></a>Example responses</h3>
+<div class="listingblock">
+<div class="title">CreateSubscriptionOfferingResponseExample</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">{
+  "id": "be5cd937-ce10-4253-8015-56b6ba1792c7",
+  "slug": "business-phone-line",
+  "name": "Business Phone Line",
+  "description": "Recurring phone line service for business customers",
+  "partnerId": "2b6efdca-3a92-415f-b819-1d0d4df1eae2",
+  "type": "SUBSCRIPTION",
+  "status": "DRAFT",
+  "multipleQuantity": false,
+  "categoryIds": [],
+  "createdAt": "2026-09-05T14:22:31Z"
+}</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">CreateSinglePurchaseOfferingResponseExample</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">{
+  "id": "be5cd937-ce10-4253-8015-56b6ba1792c7",
+  "slug" "voicemail-setup-fee"
+  "name": "Voicemail Setup Fee",
+  "description": "One-time setup fee for voicemail configuration",
+  "partnerId": "2b6efdca-3a92-415f-b819-1d0d4df1eae2",
+  "type": "SINGLE_PURCHASE",
+  "status": "DRAFT",
+  "multipleQuantity": false,
+  "categoryIds": [],
+  "createdAt": "2026-09-05T14:30:12Z"
+}</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">CreateUsageBasedOfferingResponseExample</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">{
+  "id": "be5cd937-ce10-4253-8015-56b6ba1792c7",
+  "slug": "pay-per-minute-long-distance",
+  "name": "Pay-per-minute Long Distance",
+  "description": "Billed according to actual minutes used",
+  "partnerId": "2b6efdca-3a92-415f-b819-1d0d4df1eae2",
+  "type": "USAGE_BASED",
+  "status": "DRAFT",
+  "multipleQuantity": false,
+  "categoryIds": [],
+  "createdAt": "2026-09-05T14:31:47Z"
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="errors"><a class="anchor" href="#errors"></a>Errors</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 60%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Status</th>
+<th class="tableblock halign-left valign-top">Code</th>
+<th class="tableblock halign-left valign-top">Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>400</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>VALIDATION_ERROR</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A required field is missing, or the <code>type</code> is not one of the allowed values. The response body includes a <code>details</code> array naming the affected field(s).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>401</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>UNAUTHORIZED</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The Active Directory credentials are missing, expired, or invalid.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>404</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>PARTNER_NOT_FOUND</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No Partner entity exists with the given <code>partnerId</code>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>409</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>SLUG_CONFLICT</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The generated slug already exists for this Partner. Set a different <code>name</code> for this Offering.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="../references.html">References</a></span>
+  <span class="next"><a href="../events/events.html">Events</a></span>
+</nav>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script id="site-script" src="../../../_theme/js/site.js" data-ui-root-path="../../../_theme"></script>
+<script async src="../../../_theme/js/vendor/highlight.js"></script>
+<script src="../../../_theme/js/vendor/lunr.js"></script>
+<script src="../../../_theme/js/search-ui.js" id="search-ui-script" data-site-root-path="../../.." data-snippet-length="100" data-stylesheet="../../../_theme/css/search.css"></script>
+<script async src="../../../search-index.js"></script>
+<script src="../../../_theme/js/preloader.js"></script>  </body>
+</html>

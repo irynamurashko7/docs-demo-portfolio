@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Shopping Cart :: Core Platform Documentation</title>
+    <link rel="canonical" href="https://irynamurashko7.github.io/docs-demo-portfolio/project/explanations/shopping-cart/overview.html">
+    <link rel="prev" href="../pricing-plans/overview.html">
+    <link rel="next" href="flows/shopping-cart-flows.html">
+    <meta name="generator" content="Antora 3.1.9">
+    <link rel="stylesheet" href="../../../_theme/css/site.css">
+<link rel="icon" href="../../../_theme/img/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="../../../_theme/css/admonitions.css">
+<link rel="stylesheet" href="https://unpkg.com/bpmn-js/dist/assets/bpmn-js.css">
+<link rel="stylesheet" href="../../../_theme/css/tiles.css">
+<script src="https://unpkg.com/bpmn-js/dist/bpmn-viewer.development.js"></script>  </head>
+  <body class="article">
+<script type="module">import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs'; mermaid.initialize({"startOnLoad":true});</script><header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://irynamurashko7.github.io/docs-demo-portfolio">Core Platform Documentation</a>
+      <div class="navbar-item search hide-for-print">
+        <div id="search-field" class="field">
+          <input id="search-input" type="text" placeholder="Search the docs">
+        </div>
+      </div>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item feedback-form" href="#" onclick="linkToForm();">&#x1F4AD Send feedback</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<script>
+  function linkToForm() {
+    window.open("https://docs.google.com/forms/d/e/1FAIpQLScvBMxC9JuhgvpWutLqqXD8kZyblFRfpBMGI8RIhKBRQkbCAw/viewform?entry.1314213330=" + window.location.href);
+  }
+</script>
+<div class="body">
+<div class="nav-container" data-component="project" data-version="master">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../../index.html">Project</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../index.html">Introduction</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../tutorials/tutorials.html">Tutorials</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../tutorials/set-up-product/set-up-product.html">Set up your product</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../tutorials/set-up-product/set-up-prepaid-product.html">Prepaid</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tutorials/set-up-product/configure-prepaid-partner.html">Configure a Partner</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tutorials/set-up-product/configure-prepaid-offering.html">Configure an Offering</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tutorials/set-up-product/configure-prepaid-pricing-plan.html">Configure a Pricing Plan</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tutorials/set-up-product/sc-product-purchase.html">Integrate your product purchase into the Shopping Cart</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Usage-based</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Free</span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Set up an Application</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Set up your product configuration</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Set up your product discovery</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Configure your product marketing</span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../how-to/how-to-guides.html">How-to Guides</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../how-to/partners/manage-partners.html">Manage Partners</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../how-to/partners/update-partner.html">Update</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../how-to/partners/update-default-purchase-settings.html">Update default purchase settings</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../how-to/offerings/manage-offerings.html">Manage Offerings</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../how-to/offerings/create-offering.html">Create</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../how-to/offerings/retrieve-offering.html">Retrieve</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../how-to/offerings/update-offering.html">Update</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../how-to/offerings/update-offering.html#add-categories">Add categories</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../how-to/offerings/update-offering.html#update-category-list">Update category list</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../how-to/offerings/update-offering.html#remove-categories">Remove categories</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../how-to/offerings/update-offering.html#activate-deactivate">Activate/deactivate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../how-to/offerings/update-offering.html##allow-restrict-multiple-quantity">Allow/restrict multiple quantity for items</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../how-to/offerings/update-offering.html#rename">Rename</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../how-to/offerings/update-offering.html#enable-usage-based-configuration">Enable usage-based configuration</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../how-to/offerings/delete-offering.html">Delete</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Customize your Shopping Cart integration</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Manage assets</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Manage billing strategies</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Manage categories</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Manage localization</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Manage orders</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Manage parameters</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Manage price calculation rules</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Manage pricing plan durations</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Manage pricing plans</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Manage subscriptions</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Manage webhooks</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Manage widgets</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Work with prices</span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../explanations.html">Explanations</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Assets</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Configuration</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Localization</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../offerings/overview.html">Offerings</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Orders</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../pricing-plans/overview.html">Pricing Plans</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="overview.html">Shopping Cart</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="flows/shopping-cart-flows.html">Flows</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="flows/high-level.html">High-level Flow</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Product Purchase Flow</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Renewal Flow</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Update Flow</span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Widgets</span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Subscriptions</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../ui-fragments/overview.html">UI fragments</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Applications</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Embedded Panels</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Landing Pages</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Shared UI</span>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Glossary</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../glossary/glossary.html">Glossary</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../references/references.html">References</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">API Specifications</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../references/api/create-offering.html">Create an Offering</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Default Widgets</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../references/events/events.html">Events</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Browser Push Notifications</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Event Bus</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Message Bus</span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Localization Resources</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Shared Libraries</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../references/webhooks/webhooks.html">Webhooks</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../references/webhooks/shopping-cart-webhooks.html">Shopping Cart Webhooks</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../changelog.html">Changelog</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Project</span>
+    <span class="version">master</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../../index.html">Project</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../index.html">master</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../index.html">Project</a></li>
+    <li><a href="../explanations.html">Explanations</a></li>
+    <li><a href="overview.html">Shopping Cart</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="">Edit this Page</a></div>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Shopping Cart</h1>
+<div class="sect1">
+<h2 id="overview"><a class="anchor" href="#overview"></a>Overview</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <em><a href="https://www.example.com" target="_blank" rel="noopener">Shopping Cart</a></em> allows customers to purchase the products they have added from the partner pages.
+Its primary purpose is to provide a convenient, user-friendly way for customers to manage their selected items before proceeding to checkout.</p>
+</div>
+<div class="admonitionblock note info">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="info"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>For a product purchase, both <em>logged-in</em> and <em>guest users</em> (persons who are not logged in) can add items to the Shopping Cart.</p>
+</div>
+<div class="paragraph">
+<p>If the customer added some products as a guest user and then decided to log in, the Shopping Cart will be <em>overwritten with the products they added as a guest user</em>.</p>
+</div>
+<div class="paragraph">
+<p>If a user added items to the Shopping Cart but didn&#8217;t proceed with a checkout, the items will be <em>stored in the cart</em> as follows:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>For a logged-in user</strong>: <em>indefinitely</em> until the user decides to check out or delete them from the cart</p>
+</li>
+<li>
+<p><strong>For a guest user</strong>: for <em>7 days</em> until the session expires.</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>The Shopping Cart allows adding the following purchase types:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Product Purchase</p>
+</li>
+<li>
+<p>Subscription Renewal</p>
+</li>
+<li>
+<p>Subscription Plan Update</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="involved-entities"><a class="anchor" href="#involved-entities"></a>Involved entities</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>A general diagram of the product transition that occurs during the <a href="flows/high-level.html" class="xref page">Shopping Cart flow</a> can be found below:</p>
+</div>
+<div class="imageblock"><div class="mermaid content" style="width: 100%; ">---
+title: Product Transition Diagram
+---
+flowchart LR
+    A[Product]
+    B[Cart Item
+    'quantity': 2]
+    C[Order Item]
+    D[Customer Item 1]
+    D1[Customer Item 2]
+    E[Subscription 1]
+    E1[Subscription 2]
+
+A--is added to cart-->B
+B-- order is created-->C
+C-- order is processed -->D
+C-- order is processed -->D1
+D-- may have-->E
+D1-- may have-->E1</div></div>
+<div class="sect2">
+<h3 id="cart-item"><a class="anchor" href="#cart-item"></a>Cart Item</h3>
+<div class="paragraph">
+<p>The Partner creates their page with an option for customers to add their products to the Shopping Cart right from the page.
+Once an item is added to the Shopping Cart, it is treated as a <strong>cart item</strong>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="order-item"><a class="anchor" href="#order-item"></a>Order Item</h3>
+<div class="paragraph">
+<p>During the <a href="flows/high-level.html" class="xref page">Shopping Cart flow</a>, the Core Platform creates an order for the purchase.
+Once the order is created, the cart item becomes an <strong>order item</strong>.</p>
+</div>
+<div class="admonitionblock note info">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="info"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>For a cart item with a quantity of more than 1 (for example, 2 or more of the same phone line package), a single order item is created. Each of these items in the order item will get its Customer Item ID and, for a subscription Offering, a subscription ID.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="customer-item"><a class="anchor" href="#customer-item"></a>Customer Item</h3>
+<div class="paragraph">
+<p>A <em>Customer Item</em> is an entity that can represent both subscription and single-purchase Offerings purchased within the Core Platform and owned by the customer. This entity also stores Offering-related information and data about the associated subscriptions (for subscription Offerings).</p>
+</div>
+<div class="paragraph">
+<p>Please check the Customer Items document for more information about the Customer Item entity.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="subscription"><a class="anchor" href="#subscription"></a>Subscription</h3>
+<div class="paragraph">
+<p>Subscription Offering instances also get a <em>Subscription</em> entity.</p>
+</div>
+<div class="paragraph">
+<p>A <em>Subscription</em> represents a billing model where the customer pays a fixed price at regular intervals (for example, monthly or yearly) to use a product or service.</p>
+</div>
+<div class="paragraph">
+<p>The subscription model helps partners in the following areas:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Automate the regular billing for customers.</p>
+</li>
+<li>
+<p>Perform actions in the Customer Items based on subscription lifecycle events. For example, terminate access to resources on subscription expiration.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Please check the Subscriptions document for more information about the subscription lifecycle.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="webhooks"><a class="anchor" href="#webhooks"></a>Webhooks</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In the Core Platform, the <a href="flows/shopping-cart-flows.html" class="xref page">purchase flow</a> has several places where the next step may vary. These places are called <em>execution phases</em>.</p>
+</div>
+<div class="paragraph">
+<p>The partner can set up a <em>webhook</em> and register it for a particular execution phase. A webhook is a mechanism that allows one service to send real-time data to another service when a specific event occurs. This webhook will help the Core Platform to define (based on the response it returns) the next step when the purchase flow reaches the execution phase.</p>
+</div>
+<div class="paragraph">
+<p>Check <a href="../../references/webhooks/shopping-cart-webhooks.html" class="xref page">this document</a> for payload and response references for each webhook.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="shopping-cart-ui"><a class="anchor" href="#shopping-cart-ui"></a>Shopping Cart UI</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>On the UI, the Shopping Cart is represented with the following pages and screens:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#shopping-cart-page">Shopping Cart page</a></p>
+</li>
+<li>
+<p><a href="#order-processing-page">Order Processing page</a></p>
+</li>
+<li>
+<p><a href="#purchase-summary-page">Purchase Summary page</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Shopping Cart and Purchase Summary pages use widgets to display items.</p>
+</div>
+<div class="admonitionblock note info">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="info"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>To show customers that widgets are still loading, the Shopping Cart system uses the <em>Skeleton Loader component</em> from the <a href="https://www.example.com" target="_blank" rel="noopener">Shared Components Library</a> for all widgets (default and custom) by default.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sect2">
+<h3 id="shopping-cart-page"><a class="anchor" href="#shopping-cart-page"></a>Shopping Cart page</h3>
+<div class="paragraph">
+<p>This page renders <strong>Shopping Cart widgets</strong> (default or custom) to display cart items. As a result, the customer can check information about the added items, select available configuration options, add a promo code (if they have any) and then proceed with the purchase.</p>
+</div>
+<div class="paragraph">
+<p><strong>Recommended Items</strong> section displays suggestions of products that can be used together with the item added to the Shopping Cart, enabling the customer to purchase them simultaneously right away.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="order-processing-page"><a class="anchor" href="#order-processing-page"></a>Order Processing page</h3>
+<div class="paragraph">
+<p>This page shows the current state of the <a href="flows/high-level.html#processing-order" class="xref page">order processing</a> to the customer if it takes more than 5 seconds.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="purchase-summary-page"><a class="anchor" href="#purchase-summary-page"></a>Purchase Summary page</h3>
+<div class="paragraph">
+<p>On this page, the customer can see the order summary with details of the purchased items displayed via <strong>Purchase Summary widgets</strong> (default or custom). Depending on the processing status, the items are divided into 2 sections: successfully purchased and failed. The failed items are refunded automatically.</p>
+</div>
+<div class="paragraph">
+<p>Check the Widgets document to learn more.</p>
+</div>
+<div class="paragraph">
+<p>This page also provides the customer with an option to download the order receipt in PDF format.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="ui-customization-options"><a class="anchor" href="#ui-customization-options"></a>UI customization options</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Core Platform provides options to customize the look of the products in the Shopping Cart. These include <strong>widgets</strong>.</p>
+</div>
+<div class="sect2">
+<h3 id="widgets"><a class="anchor" href="#widgets"></a>Widgets</h3>
+<div class="paragraph">
+<p>A <em>widget</em> is an independent UI (user interface) element that displays information about a product and allows users to interact with it.
+Check the Widgets document to learn more.</p>
+</div>
+</div>
+</div>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="../pricing-plans/overview.html">Pricing Plans</a></span>
+  <span class="next"><a href="flows/shopping-cart-flows.html">Flows</a></span>
+</nav>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script id="site-script" src="../../../_theme/js/site.js" data-ui-root-path="../../../_theme"></script>
+<script async src="../../../_theme/js/vendor/highlight.js"></script>
+<script src="../../../_theme/js/vendor/lunr.js"></script>
+<script src="../../../_theme/js/search-ui.js" id="search-ui-script" data-site-root-path="../../.." data-snippet-length="100" data-stylesheet="../../../_theme/css/search.css"></script>
+<script async src="../../../search-index.js"></script>
+<script src="../../../_theme/js/preloader.js"></script>  </body>
+</html>

@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Glossary :: Core Platform Documentation</title>
+    <link rel="canonical" href="https://irynamurashko7.github.io/docs-demo-portfolio/project/glossary/glossary.html">
+    <link rel="prev" href="../explanations/ui-fragments/overview.html">
+    <link rel="next" href="../references/references.html">
+    <meta name="generator" content="Antora 3.1.9">
+    <link rel="stylesheet" href="../../_theme/css/site.css">
+<link rel="icon" href="../../_theme/img/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="../../_theme/css/admonitions.css">
+<link rel="stylesheet" href="https://unpkg.com/bpmn-js/dist/assets/bpmn-js.css">
+<link rel="stylesheet" href="../../_theme/css/tiles.css">
+<script src="https://unpkg.com/bpmn-js/dist/bpmn-viewer.development.js"></script>  </head>
+  <body class="article">
+<script type="module">import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs'; mermaid.initialize({"startOnLoad":true});</script><header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://irynamurashko7.github.io/docs-demo-portfolio">Core Platform Documentation</a>
+      <div class="navbar-item search hide-for-print">
+        <div id="search-field" class="field">
+          <input id="search-input" type="text" placeholder="Search the docs">
+        </div>
+      </div>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item feedback-form" href="#" onclick="linkToForm();">&#x1F4AD Send feedback</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<script>
+  function linkToForm() {
+    window.open("https://docs.google.com/forms/d/e/1FAIpQLScvBMxC9JuhgvpWutLqqXD8kZyblFRfpBMGI8RIhKBRQkbCAw/viewform?entry.1314213330=" + window.location.href);
+  }
+</script>
+<div class="body">
+<div class="nav-container" data-component="project" data-version="master">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../index.html">Project</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">Introduction</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../tutorials/tutorials.html">Tutorials</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../tutorials/set-up-product/set-up-product.html">Set up your product</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../tutorials/set-up-product/set-up-prepaid-product.html">Prepaid</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tutorials/set-up-product/configure-prepaid-partner.html">Configure a Partner</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tutorials/set-up-product/configure-prepaid-offering.html">Configure an Offering</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tutorials/set-up-product/configure-prepaid-pricing-plan.html">Configure a Pricing Plan</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tutorials/set-up-product/sc-product-purchase.html">Integrate your product purchase into the Shopping Cart</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Usage-based</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Free</span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Set up an Application</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Set up your product configuration</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Set up your product discovery</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Configure your product marketing</span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../how-to/how-to-guides.html">How-to Guides</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../how-to/partners/manage-partners.html">Manage Partners</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../how-to/partners/update-partner.html">Update</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../how-to/partners/update-default-purchase-settings.html">Update default purchase settings</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../how-to/offerings/manage-offerings.html">Manage Offerings</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../how-to/offerings/create-offering.html">Create</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../how-to/offerings/retrieve-offering.html">Retrieve</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../how-to/offerings/update-offering.html">Update</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../how-to/offerings/update-offering.html#add-categories">Add categories</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../how-to/offerings/update-offering.html#update-category-list">Update category list</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../how-to/offerings/update-offering.html#remove-categories">Remove categories</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../how-to/offerings/update-offering.html#activate-deactivate">Activate/deactivate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../how-to/offerings/update-offering.html##allow-restrict-multiple-quantity">Allow/restrict multiple quantity for items</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../how-to/offerings/update-offering.html#rename">Rename</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../how-to/offerings/update-offering.html#enable-usage-based-configuration">Enable usage-based configuration</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../how-to/offerings/delete-offering.html">Delete</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Customize your Shopping Cart integration</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Manage assets</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Manage billing strategies</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Manage categories</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Manage localization</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Manage orders</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Manage parameters</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Manage price calculation rules</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Manage pricing plan durations</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Manage pricing plans</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Manage subscriptions</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Manage webhooks</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Manage widgets</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Work with prices</span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../explanations/explanations.html">Explanations</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Assets</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Configuration</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Localization</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../explanations/offerings/overview.html">Offerings</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Orders</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../explanations/pricing-plans/overview.html">Pricing Plans</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../explanations/shopping-cart/overview.html">Shopping Cart</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../explanations/shopping-cart/flows/shopping-cart-flows.html">Flows</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../explanations/shopping-cart/flows/high-level.html">High-level Flow</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Product Purchase Flow</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Renewal Flow</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Update Flow</span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Widgets</span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Subscriptions</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../explanations/ui-fragments/overview.html">UI fragments</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Applications</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Embedded Panels</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Landing Pages</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Shared UI</span>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Glossary</span>
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="glossary.html">Glossary</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../references/references.html">References</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">API Specifications</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../references/api/create-offering.html">Create an Offering</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Default Widgets</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../references/events/events.html">Events</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Browser Push Notifications</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Event Bus</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Message Bus</span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Localization Resources</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Shared Libraries</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../references/webhooks/webhooks.html">Webhooks</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../references/webhooks/shopping-cart-webhooks.html">Shopping Cart Webhooks</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../changelog.html">Changelog</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Project</span>
+    <span class="version">master</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../index.html">Project</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">master</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Project</a></li>
+    <li>Glossary</li>
+    <li><a href="glossary.html">Glossary</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="">Edit this Page</a></div>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Glossary</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>This section provides definitions of the key terms used in the Core Platform.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="a"><a class="anchor" href="#a"></a>A</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="add-on-pricing-plan"><a class="anchor" href="#add-on-pricing-plan"></a>Add-on Pricing Plan</h3>
+<div class="paragraph">
+<p>An <em>Add-on Pricing Plan</em> is a specific pricing plan that customers can purchase only with particular pricing plans or for an existing Customer Item associated with one of these pricing plans. Such pricing plans are called <em>Parent Pricing Plans</em>, and such a Customer Item is called a <em>Parent Customer Item</em>.</p>
+</div>
+<div class="paragraph">
+<p>Read more <a href="../explanations/pricing-plans/overview.html" class="xref page">here</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="application"><a class="anchor" href="#application"></a>Application</h3>
+<div class="paragraph">
+<p>An <em>Application</em> is a UI fragment where users can manage and configure product instances they own or change system and account settings.</p>
+</div>
+<div class="paragraph">
+<p>The Core Platform uses its discovery system to find such UI fragments.</p>
+</div>
+<div class="paragraph">
+<p>This discovery system uses associations between various entities (Partners, Offerings, pricing plans, etc.) and Applications to find Applications the customer can use for a particular product instance (for example, Phone Number List, Voicemail Manager, etc.) and render them.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="asset"><a class="anchor" href="#asset"></a>Asset</h3>
+<div class="paragraph">
+<p>An <em>Asset</em> is a color, an icon, or an image set for an entity (category, Offering, Application, etc.) that is always accessible on Project.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="b"><a class="anchor" href="#b"></a>B</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="billing-cycle"><a class="anchor" href="#billing-cycle"></a>Billing Cycle</h3>
+<div class="paragraph">
+<p>A <em>Billing Cycle</em> is the time between two consecutive billing invoices for subscription Offerings.</p>
+</div>
+<div class="paragraph">
+<p>Read more <a href="../explanations/pricing-plans/overview.html#billing-cycle" class="xref page">here</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="billing-strategy"><a class="anchor" href="#billing-strategy"></a>Billing Strategy</h3>
+<div class="paragraph">
+<p>A <em>Billing Strategy</em> represents a set of days before or after the subscription expiration date when a payment event should be triggered.</p>
+</div>
+<div class="paragraph">
+<p>It includes configurations for renewal notifications for regular subscriptions and charge attempts for regular and trial subscriptions.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="c"><a class="anchor" href="#c"></a>C</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="category"><a class="anchor" href="#category"></a>Category</h3>
+<div class="paragraph">
+<p>A <em>Category</em> is an entity the Project pages use to group Offerings and Applications for rendering on the UI. For example, the Shopping Cart pages can group Offerings by categories such as Phone Lines, Voicemail, etc.</p>
+</div>
+<div class="paragraph">
+<p>When assigning a category to an Offering or Application, you must indicate if this category will be the <em>primary</em> one.</p>
+</div>
+<div class="paragraph">
+<p>A <em>primary category</em> defines the section where the Offering or Application must always belong. All other categories are <em>secondary</em>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="configuration"><a class="anchor" href="#configuration"></a>Configuration</h3>
+<div class="paragraph">
+<p><em>Configuration</em> is a service that teaches users how to use and configure their purchased product instances (Customer Items).</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="customer-item"><a class="anchor" href="#customer-item"></a>Customer Item</h3>
+<div class="paragraph">
+<p>A <em>Customer Item</em> is an entity that can represent both subscription and single-purchase Offerings purchased within the Core Platform and owned by the customer. This entity also stores Offering-related information and data about the associated subscriptions (for subscription Offerings).</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="e"><a class="anchor" href="#e"></a>E</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="event"><a class="anchor" href="#event"></a>Event</h3>
+<div class="paragraph">
+<p>The Core Platform publishes an <em>Event</em> when something occurs that partners may need to know about, so they can take the necessary actions on their side (for example, subscription renewal).</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="f"><a class="anchor" href="#f"></a>F</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="free-product"><a class="anchor" href="#free-product"></a>Free Product</h3>
+<div class="paragraph">
+<p>A <em>Free Product</em> is an item that customers automatically receive free of charge under certain conditions.</p>
+</div>
+<div class="paragraph">
+<p>The purchase price of such products is always zero.</p>
+</div>
+<div class="paragraph">
+<p>For example, after purchasing a phone line, the customer must receive the default voicemail service unless they connect it to another product, such as a call routing service, from the start.</p>
+</div>
+<div class="paragraph">
+<p>Such product instances are created via API and skip the payment process.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="g"><a class="anchor" href="#g"></a>G</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="grace-period"><a class="anchor" href="#grace-period"></a>Grace Period</h3>
+<div class="paragraph">
+<p>A <em>Grace Period</em> represents the days after the expiration date when a subscription remains active on the Core Platform side. Partners can use this period, for example, to allow customers to renew their subscriptions even if all scheduled charge attempts failed for some reason.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="l"><a class="anchor" href="#l"></a>L</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="landing-page"><a class="anchor" href="#landing-page"></a>Landing Page</h3>
+<div class="paragraph">
+<p>A <em>Landing Page</em> is a UI fragment devoted to a particular Offering.</p>
+</div>
+<div class="paragraph">
+<p>Such a page provides users with detailed information about the Offering, a comparison of the associated pricing plans (if there are several), and an option to purchase them.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="launchpad"><a class="anchor" href="#launchpad"></a>Launchpad</h3>
+<div class="paragraph">
+<p>The <em>Launchpad</em> is a system where users start their Project journey, see new notifications, add more products and tools, and launch any Applications installed in their account.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="localization-resource"><a class="anchor" href="#localization-resource"></a>Localization Resource</h3>
+<div class="paragraph">
+<p>A <em>Localization Resource</em> allows localizing and customizing parts of the website related to an entity (Application, Offering, pricing plan, category, etc.).
+For example, you can use it for titles, descriptions, or features that must be shown for a particular pricing plan.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="m"><a class="anchor" href="#m"></a>M</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="minicart"><a class="anchor" href="#minicart"></a>MiniCart</h3>
+<div class="paragraph">
+<p>The <em>MiniCart</em> a panel that provides quick access to items added to the Shopping Cart, allowing users to proceed with their purchase immediately or go to the Shopping Cart to customize them before purchase.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="n"><a class="anchor" href="#n"></a>N</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="notification-center"><a class="anchor" href="#notification-center"></a>Notification Center</h3>
+<div class="paragraph">
+<p>The <em>Notification Center</em> is a centralized system designed to streamline and standardize the delivery of UI notifications from all products within the Project ecosystem to users.</p>
+</div>
+<div class="paragraph">
+<p>Users can find notifications about all events in their account (for example, completed orders, items requiring attention, delayed operations, etc.) in the Notification Center.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="o"><a class="anchor" href="#o"></a>O</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="offering"><a class="anchor" href="#offering"></a>Offering</h3>
+<div class="paragraph">
+<p><em>Offering</em> entities represent different variations of the service offered within the Partner. For example, if you want to target your services to individual and business customers, your Phone Service Partner can have two Offerings: Residential Phone Line and Business Phone Line.</p>
+</div>
+<div class="paragraph">
+<p>Each Offering distributed via the Core Platform must have at least one <em>pricing plan</em>.</p>
+</div>
+<div class="paragraph">
+<p>Read more <a href="../explanations/offerings/overview.html" class="xref page">here</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="order"><a class="anchor" href="#order"></a>Order</h3>
+<div class="paragraph">
+<p>An <em>Order</em> is an entity that stores information about order status, payment terms, invoice details, the customer, and the items the customer is trying to get in a single batch.
+These items can include purchases of subscription or single-purchase Offerings, Offerings provided free of charge, subscription renewals, or subscription plan updates.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="p"><a class="anchor" href="#p"></a>P</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="parameter"><a class="anchor" href="#parameter"></a>Parameter</h3>
+<div class="paragraph">
+<p>A <em>Parameter</em> is a placeholder used in a price calculation rule to represent a value that may change.</p>
+</div>
+<div class="paragraph">
+<p>Since each parameter is global, several price calculation rules associated with your Partner entity can use it. Therefore, it must have a unique <code>name</code>.</p>
+</div>
+<div class="paragraph">
+<p>Each parameter requires a <em>value</em> that the Core Platform will use during price calculation.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="partner"><a class="anchor" href="#partner"></a>Partner</h3>
+<div class="paragraph">
+<p>The term <em>partner</em> with a lowercase <strong>p</strong> refers to a consumer of the Core Platform functionality.
+On the other hand, the <em>Partner</em> with a capital <strong>P</strong> refers to a backend entity in the Core Platform.</p>
+</div>
+<div class="paragraph">
+<p>The <em>Partner</em> entity represents the service you intend to offer your customers in the Project ecosystem (for example, a Phone Service Partner allowing customers to get phone lines for voice communication).</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="pre-authorization"><a class="anchor" href="#pre-authorization"></a>Pre-authorization</h3>
+<div class="paragraph">
+<p><em>Pre-authorization</em> is a process of verifying the customer by charging and immediately refunding a small nominal amount (e.g., $0.05 or its equivalent in the customer&#8217;s currency) to their selected payment method.</p>
+</div>
+<div class="paragraph">
+<p>Pre-authorization occurs if the Partner enables this option and the final total of the order is $0.00 (for example, for trial or usage-based subscriptions). This process helps to prevent fraudulent purchases by validating the customer&#8217;s payment method.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="prepaid-product"><a class="anchor" href="#prepaid-product"></a>Prepaid Product</h3>
+<div class="paragraph">
+<p>A <em>Prepaid Product</em> is an item the customers can purchase via the Shopping Cart.
+During the purchase, they must pay for the item for one or several billing periods.</p>
+</div>
+<div class="paragraph">
+<p>The price of such a product may be equal to or higher than zero.</p>
+</div>
+<div class="paragraph">
+<p>Partners can also switch the payment for the product on and off at any point if necessary.</p>
+</div>
+<div class="paragraph">
+<p>For example, the partner can sell a phone line service to customers via the Shopping Cart and have a giveaway free of charge at some point.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="price-calculation-rule"><a class="anchor" href="#price-calculation-rule"></a>Price Calculation Rule</h3>
+<div class="paragraph">
+<p>A <em>Price Calculation Rule</em> is an entity that describes the product price.</p>
+</div>
+<div class="paragraph">
+<p>Each price calculation rule must have a <em>formula expression</em> and <em>default values</em> for all used <em>parameters</em>.</p>
+</div>
+<div class="paragraph">
+<p>The <em>formula expression</em> can use the `name`s of one or several parameters combined in arithmetic, comparison, and ternary operations to describe the price calculation rules.</p>
+</div>
+<div class="paragraph">
+<p>The <em>default parameter values</em> serve as a fallback for all pricing plans using this price calculation rule.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="pricing-plan"><a class="anchor" href="#pricing-plan"></a>Pricing Plan</h3>
+<div class="paragraph">
+<p>A <em>Pricing Plan</em> is an entity that contains information about the billing cycle period (for a subscription Offering) and a <em>price calculation rule</em>.</p>
+</div>
+<div class="paragraph">
+<p>The pricing plan assigned to an Offering defines its price based on the configured billing cycle, price calculation rule, and designated values.</p>
+</div>
+<div class="paragraph">
+<p>Read more <a href="../explanations/pricing-plans/overview.html" class="xref page">here</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="pricing-plan-duration"><a class="anchor" href="#pricing-plan-duration"></a>Pricing Plan Duration</h3>
+<div class="paragraph">
+<p>A <em>Pricing Plan Duration</em> describes an interval between the start of a billing cycle and its end and the settings that depend on it.</p>
+</div>
+<div class="paragraph">
+<p>A pricing plan can have several durations.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="pricing-plan-feature"><a class="anchor" href="#pricing-plan-feature"></a>Pricing Plan Feature</h3>
+<div class="paragraph">
+<p>A <em>Pricing Plan Feature</em> is a text description of a pricing plan characteristic. It may or may not relate to the price calculation.
+For example, the Business Phone Line Offering has the call recording storage feature that is provided in various amounts for various pricing plans by default and does not affect the price.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="promotion"><a class="anchor" href="#promotion"></a>Promotion</h3>
+<div class="paragraph">
+<p>A <em>Promotion</em> is an entity that defines the time frames, scope, parameters, and priority of a particular discount.</p>
+</div>
+<div class="paragraph">
+<p>Core Platform can find promotions in the following ways:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Automatically (auto promo)</p>
+</li>
+<li>
+<p>Upon user action (when they enter a valid promotion code)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Each promotion has a set of parameters that define the circumstances under which it should be applied.
+Partners can flexibly configure the scope of the promotion application using the promotion parameters, Promotion Codes, and Promotion Limits.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="promotion-code"><a class="anchor" href="#promotion-code"></a>Promotion Code</h3>
+<div class="paragraph">
+<p>A <em>Promotion Code</em> activates the promotion. So, to take advantage of the promotion, the user must enter the associated code.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="promotion-limit"><a class="anchor" href="#promotion-limit"></a>Promotion Limit</h3>
+<div class="paragraph">
+<p>A <em>Promotion Limit</em> sets the maximum number of times (threshold) for promotion usage.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="s"><a class="anchor" href="#s"></a>S</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="shopping-cart"><a class="anchor" href="#shopping-cart"></a>Shopping Cart</h3>
+<div class="paragraph">
+<p>The <em><a href="https://www.example.com" target="_blank" rel="noopener">Shopping Cart</a></em> allows customers to purchase the products they have added from the partner pages.
+Its primary purpose is to provide a convenient, user-friendly way for customers to manage their selected items before proceeding to checkout.</p>
+</div>
+<div class="paragraph">
+<p>Read more <a href="../explanations/shopping-cart/overview.html" class="xref page">here</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="slug"><a class="anchor" href="#slug"></a>Slug</h3>
+<div class="paragraph">
+<p>A <em>Slug</em> is a unique identifier of an entity (Partner, Offering, pricing plan, etc.) in an easy-to-read form.</p>
+</div>
+<div class="paragraph">
+<p>For example, a phone services provider can have a <code>residential-phone-line</code> slug for their Residential Phone Line Offering entity and use it as an identifier for this Offering entity.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="subscription"><a class="anchor" href="#subscription"></a>Subscription</h3>
+<div class="paragraph">
+<p>A <em>Subscription</em> represents a billing model where the customer pays a fixed price at regular intervals (for example, monthly or yearly) to use a product or service.</p>
+</div>
+<div class="paragraph">
+<p>The subscription model helps partners in the following areas:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Automate the regular billing for customers.</p>
+</li>
+<li>
+<p>Perform actions in the Customer Items based on subscription lifecycle events. For example, terminate access to resources on subscription expiration.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Subscription entities are created for subscription Offerings only.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="subscription-notification-settings"><a class="anchor" href="#subscription-notification-settings"></a>Subscription Notification Settings</h3>
+<div class="paragraph">
+<p><em>Subscription Notification Settings</em> allow partners to set notifications to a particular time during the subscription lifecycle.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="subscription-pause"><a class="anchor" href="#subscription-pause"></a>Subscription Pause</h3>
+<div class="paragraph">
+<p>A <em>Pause</em> is a period of temporary interruption of service without permanent subscription termination.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="suggestion"><a class="anchor" href="#suggestion"></a>Suggestion</h3>
+<div class="paragraph">
+<p>A <em>Suggestion</em> is a recommendation of product customers usually purchase together with the item the customer views or purchases. When used together, such products supplement each other&#8217;s functionality (for example, a phone line and voicemail).</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="t"><a class="anchor" href="#t"></a>T</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="trial-period"><a class="anchor" href="#trial-period"></a>Trial Period</h3>
+<div class="paragraph">
+<p>A <em>Trial period</em> lets customers try a subscription for free before buying it. During this time, they can test its features and see if it fits their needs.</p>
+</div>
+<div class="paragraph">
+<p>The trial period doesn&#8217;t count as a billing cycle. If the customer decides to continue after the trial, the first billing cycle starts after the trial subscription renewal or when they purchase the regular subscription.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="u"><a class="anchor" href="#u"></a>U</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="usage-based-product"><a class="anchor" href="#usage-based-product"></a>Usage-based Product</h3>
+<div class="paragraph">
+<p>A <em>Usage-based Product</em> is an item that customers pay for based on their actual usage of allocated resources.</p>
+</div>
+<div class="paragraph">
+<p>The purchase price of such products is zero.</p>
+</div>
+<div class="paragraph">
+<p>After one billing period, the customer must pay for the amount of resources they actually consumed during that period (for example, the number of minutes used on a phone line).</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="v"><a class="anchor" href="#v"></a>V</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="value"><a class="anchor" href="#value"></a>Value</h3>
+<div class="paragraph">
+<p>A <em>Value</em> is a specific numerical or symbolic representation assigned to a parameter.</p>
+</div>
+<div class="paragraph">
+<p>Numeric values are configured in cents and can have decimal values. For example, the value specified as 20.25 means $0.2025. During price calculation, the resulting price in dollars is rounded to 2 digits after the decimal point for regular pricing plans and 8 digits after the decimal point for usage-based pricing plans.</p>
+</div>
+<div class="paragraph">
+<p>There are the following types of values:</p>
+</div>
+<div id="default-values" class="dlist">
+<dl>
+<dt class="hdlist1">Default value</dt>
+<dd>
+<p>For parameters, a default value is a mandatory value that is set during price calculation rule creation or update. When the Core Platform cannot find a custom value for a parameter, it uses the specified default value as a fallback.</p>
+</dd>
+<dt class="hdlist1">Custom value</dt>
+<dd>
+<p>This value is assigned to a parameter for a particular entity (Partner, Offering, pricing plan, pricing plan duration) and overrides the default value for that entity. You can use it to set various values to the same parameter. For example, you can set the <code>basePrice</code> parameter to $5 for pricing plan 1 and $10 for pricing plan 2.</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="w"><a class="anchor" href="#w"></a>W</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="webhook"><a class="anchor" href="#webhook"></a>Webhook</h3>
+<div class="paragraph">
+<p>A <em>Webhook</em> is an endpoint the Core Platform uses to send real-time data to notify the Partner when a specific event occurs and exchange data required to proceed with a particular flow (item purchase, subscription renewal, etc.).</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="widget"><a class="anchor" href="#widget"></a>Widget</h3>
+<div class="paragraph">
+<p>A <em>widget</em> is an independent UI (user interface) element that displays information about a product and allows users to interact with it.</p>
+</div>
+</div>
+</div>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="../explanations/ui-fragments/overview.html">UI fragments</a></span>
+  <span class="next"><a href="../references/references.html">References</a></span>
+</nav>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script id="site-script" src="../../_theme/js/site.js" data-ui-root-path="../../_theme"></script>
+<script async src="../../_theme/js/vendor/highlight.js"></script>
+<script src="../../_theme/js/vendor/lunr.js"></script>
+<script src="../../_theme/js/search-ui.js" id="search-ui-script" data-site-root-path="../.." data-snippet-length="100" data-stylesheet="../../_theme/css/search.css"></script>
+<script async src="../../search-index.js"></script>
+<script src="../../_theme/js/preloader.js"></script>  </body>
+</html>

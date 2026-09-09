@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Update an Offering :: Core Platform Documentation</title>
+    <link rel="canonical" href="https://irynamurashko7.github.io/docs-demo-portfolio/project/how-to/offerings/update-offering.html">
+    <link rel="prev" href="retrieve-offering.html">
+    <link rel="next" href="delete-offering.html">
+    <meta name="generator" content="Antora 3.1.9">
+    <link rel="stylesheet" href="../../../_theme/css/site.css">
+<link rel="icon" href="../../../_theme/img/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="../../../_theme/css/admonitions.css">
+<link rel="stylesheet" href="https://unpkg.com/bpmn-js/dist/assets/bpmn-js.css">
+<link rel="stylesheet" href="../../../_theme/css/tiles.css">
+<script src="https://unpkg.com/bpmn-js/dist/bpmn-viewer.development.js"></script>  </head>
+  <body class="article">
+<script type="module">import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs'; mermaid.initialize({"startOnLoad":true});</script><header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://irynamurashko7.github.io/docs-demo-portfolio">Core Platform Documentation</a>
+      <div class="navbar-item search hide-for-print">
+        <div id="search-field" class="field">
+          <input id="search-input" type="text" placeholder="Search the docs">
+        </div>
+      </div>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item feedback-form" href="#" onclick="linkToForm();">&#x1F4AD Send feedback</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<script>
+  function linkToForm() {
+    window.open("https://docs.google.com/forms/d/e/1FAIpQLScvBMxC9JuhgvpWutLqqXD8kZyblFRfpBMGI8RIhKBRQkbCAw/viewform?entry.1314213330=" + window.location.href);
+  }
+</script>
+<div class="body">
+<div class="nav-container" data-component="project" data-version="master">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../../index.html">Project</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../index.html">Introduction</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../tutorials/tutorials.html">Tutorials</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../tutorials/set-up-product/set-up-product.html">Set up your product</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../tutorials/set-up-product/set-up-prepaid-product.html">Prepaid</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tutorials/set-up-product/configure-prepaid-partner.html">Configure a Partner</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tutorials/set-up-product/configure-prepaid-offering.html">Configure an Offering</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tutorials/set-up-product/configure-prepaid-pricing-plan.html">Configure a Pricing Plan</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tutorials/set-up-product/sc-product-purchase.html">Integrate your product purchase into the Shopping Cart</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Usage-based</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Free</span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Set up an Application</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Set up your product configuration</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Set up your product discovery</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Configure your product marketing</span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../how-to-guides.html">How-to Guides</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../partners/manage-partners.html">Manage Partners</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../partners/update-partner.html">Update</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../partners/update-default-purchase-settings.html">Update default purchase settings</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="manage-offerings.html">Manage Offerings</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="create-offering.html">Create</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="retrieve-offering.html">Retrieve</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="update-offering.html">Update</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#add-categories">Add categories</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#update-category-list">Update category list</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#remove-categories">Remove categories</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#activate-deactivate">Activate/deactivate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="##allow-restrict-multiple-quantity">Allow/restrict multiple quantity for items</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#rename">Rename</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#enable-usage-based-configuration">Enable usage-based configuration</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="delete-offering.html">Delete</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Customize your Shopping Cart integration</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Manage assets</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Manage billing strategies</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Manage categories</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Manage localization</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Manage orders</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Manage parameters</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Manage price calculation rules</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Manage pricing plan durations</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Manage pricing plans</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Manage subscriptions</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Manage webhooks</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Manage widgets</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Work with prices</span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../explanations/explanations.html">Explanations</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Assets</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Configuration</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Localization</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../explanations/offerings/overview.html">Offerings</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Orders</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../explanations/pricing-plans/overview.html">Pricing Plans</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../explanations/shopping-cart/overview.html">Shopping Cart</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../explanations/shopping-cart/flows/shopping-cart-flows.html">Flows</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../explanations/shopping-cart/flows/high-level.html">High-level Flow</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Product Purchase Flow</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Renewal Flow</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Update Flow</span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Widgets</span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Subscriptions</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../explanations/ui-fragments/overview.html">UI fragments</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Applications</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Embedded Panels</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Landing Pages</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Shared UI</span>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Glossary</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../glossary/glossary.html">Glossary</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../references/references.html">References</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">API Specifications</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../references/api/create-offering.html">Create an Offering</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Default Widgets</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../references/events/events.html">Events</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Browser Push Notifications</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Event Bus</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Message Bus</span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Localization Resources</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Shared Libraries</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../references/webhooks/webhooks.html">Webhooks</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../references/webhooks/shopping-cart-webhooks.html">Shopping Cart Webhooks</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../changelog.html">Changelog</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Project</span>
+    <span class="version">master</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../../index.html">Project</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../index.html">master</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../index.html">Project</a></li>
+    <li><a href="../how-to-guides.html">How-to Guides</a></li>
+    <li><a href="manage-offerings.html">Manage Offerings</a></li>
+    <li><a href="update-offering.html">Update</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="">Edit this Page</a></div>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Update an Offering</h1>
+<div class="sect1">
+<h2 id="add-categories"><a class="anchor" href="#add-categories"></a>Add associated categories</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You may need to add categories to your Offering to group items associated with it in particular sections on Project pages.</p>
+</div>
+<div class="sect2">
+<h3 id="before-you-start"><a class="anchor" href="#before-you-start"></a>Before you start</h3>
+<div class="paragraph">
+<p>Before proceeding with these instructions, make sure to:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Find categories where your Offering belongs.</p>
+</li>
+<li>
+<p>Define which of these categories must be the primary one.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+An Offering can have only one associated primary category and several secondary ones.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="add-a-category"><a class="anchor" href="#add-a-category"></a>Add a category</h3>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>This endpoint rewrites the content of the <code>categories</code> array.</p>
+</div>
+<div class="paragraph">
+<p>Follow these steps only for the first-time adding categories for your Offering.</p>
+</div>
+<div class="paragraph">
+<p>To update the list of associated categories, follow <a href="#update-category-list">this guide</a>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Authorize in the <a href="https://api.example.com/#/backend-api/servers" target="_blank" rel="noopener">Backend API Swagger</a> using your Active Directory credentials. Read more <a href="https://www.example.com" target="_blank" rel="noopener">here</a>.</p>
+</li>
+<li>
+<p>Prepare a payload according to the <code>AssignCategory</code> example in the <a href="https://api.example.com/#/backend-api/post-/offering/update" target="_blank" rel="noopener"><code>/offering/update</code> API endpoint</a> and send the request:</p>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>To see all available examples in the API specification, click on the <strong>Example</strong> dropdown.</p>
+</div>
+<div class="paragraph">
+<p>Pay attention to the request schema in the API specification since it describes the fields you need to pass and their meaning.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>Check the <code>categories</code> field in the endpoint response to see the changes.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="update-category-list"><a class="anchor" href="#update-category-list"></a>Update category list</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You may need to update the list of associated categories for your Offering to manage sections on Project pages where its associated items will appear.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>This endpoint rewrites the content of the <code>categories</code> array.</p>
+</div>
+<div class="paragraph">
+<p>To change the list of assigned categories, you must pass the full list of the categories you need for your Offering.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sect2">
+<h3 id="before-you-start-2"><a class="anchor" href="#before-you-start-2"></a>Before you start</h3>
+<div class="paragraph">
+<p>Before proceeding with these instructions, define the full list of categories your Offering must have (both already associated and those you need to add).</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="change-the-category-list"><a class="anchor" href="#change-the-category-list"></a>Change the category list</h3>
+<div class="paragraph">
+<p>To update the association with assigned categories, follow these steps:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Authorize in the <a href="https://api.example.com/#/backend-api/servers" target="_blank" rel="noopener">Backend API Swagger</a> using your Active Directory credentials. Read more <a href="https://www.example.com" target="_blank" rel="noopener">here</a>.</p>
+</li>
+<li>
+<p>Prepare a payload according to the <code>UpdateCategoryList</code> example from the <a href="https://api.example.com/#/backend-api/post-/offering/update" target="_blank" rel="noopener"><code>/offering/update</code> API endpoint</a> and send the request:</p>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>To see all available examples in the API specification, click on the <strong>Example</strong> dropdown.</p>
+</div>
+<div class="paragraph">
+<p>Pay attention to the request schema in the API specification since it describes the fields you need to pass and their meaning.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>Check the <code>categories</code> field in the endpoint response to see the changes.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="remove-categories"><a class="anchor" href="#remove-categories"></a>Remove associated categories</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You may need to remove the association with assigned categories for your Offering for its associated items to disappear from these sections on Project pages.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>This endpoint rewrites the content of the <code>categories</code> array.</p>
+</div>
+<div class="paragraph">
+<p>Follow these steps only to remove all categories your Offering.</p>
+</div>
+<div class="paragraph">
+<p>To update the list of associated categories, follow <a href="#update-category-list">this guide</a>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>To remove the association with assigned categories, follow these steps:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Authorize in the <a href="https://api.example.com/#/backend-api/servers" target="_blank" rel="noopener">Backend API Swagger</a> using your Active Directory credentials. Read more <a href="https://www.example.com" target="_blank" rel="noopener">here</a>.</p>
+</li>
+<li>
+<p>Prepare a payload according to the <code>RemoveAssignedCategories</code> example in the <a href="https://api.example.com/#/backend-api/post-/offering/update" target="_blank" rel="noopener"><code>/offering/update</code> API endpoint</a> and send the request:</p>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>To see all available examples in the API specification, click on the <strong>Example</strong> dropdown.</p>
+</div>
+<div class="paragraph">
+<p>Pay attention to the request schema in the API specification since it describes the fields you need to pass and their meaning.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>Check the <code>categories</code> field in the endpoint response to see the changes.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="activate-deactivate"><a class="anchor" href="#activate-deactivate"></a>Activate/deactivate</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>With this option, you can:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Activate your Offering to make it available for purchases after your product integration and development are complete.</p>
+</li>
+<li>
+<p>Deactivate your Offering to make it unavailable for new purchases if you need to sunset it.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note info">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="info"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Deactivation restricts only new purchases and does not affect existing subscriptions associated with your Offering.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>To change your Offering state to/from active, follow these steps:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Authorize in the <a href="https://api.example.com/#/backend-api/servers" target="_blank" rel="noopener">Backend API Swagger</a> using your Active Directory credentials. Read more <a href="https://www.example.com" target="_blank" rel="noopener">here</a>.</p>
+</li>
+<li>
+<p>Prepare a payload according to one of the following examples in the <a href="https://api.example.com/#/backend-api/post-/offering/update" target="_blank" rel="noopener"><code>/offering/update</code> API endpoint</a> and send the request:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p><code>Activate</code> example: to activate your Offering.</p>
+</li>
+<li>
+<p><code>Deactivate</code> example: to deactivate your Offering.</p>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>To see all available examples in the API specification, click on the <strong>Example</strong> dropdown.</p>
+</div>
+<div class="paragraph">
+<p>Pay attention to the request schema in the API specification since it describes the fields you need to pass and their meaning.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Check the <code>status</code> field in the endpoint response to see the changes.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="allow-restrict-multiple-quantity"><a class="anchor" href="#allow-restrict-multiple-quantity"></a>Allow/restrict multiple quantities for items</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You may need this functionality to provide or restrict the possibility for customers to add several equal items associated with your Offering for purchase.</p>
+</div>
+<div class="paragraph">
+<p>For example, a customer may be able to add several equal phone lines (multiple quantity allowed) but not the same phone number several times for purchase (multiple quantity restricted).</p>
+</div>
+<div class="paragraph">
+<p>To allow/restrict multiple quantities for items, follow these steps:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Authorize in the <a href="https://api.example.com/#/backend-api/servers" target="_blank" rel="noopener">Backend API Swagger</a> using your Active Directory credentials. Read more <a href="https://www.example.com" target="_blank" rel="noopener">here</a>.</p>
+</li>
+<li>
+<p>Prepare a payload according to one of the following examples in the <a href="https://api.example.com/#/backend-api/post-/offering/update" target="_blank" rel="noopener"><code>/offering/update</code> API endpoint</a> and send the request:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p><code>AllowMultipleQuantity</code> example: to allow purchasing several equal items.</p>
+</li>
+<li>
+<p><code>RestrictMultipleQuantity</code> example: to restrict purchasing several equal items.</p>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>To see all available examples in the API specification, click on the <strong>Example</strong> dropdown.</p>
+</div>
+<div class="paragraph">
+<p>Pay attention to the request schema in the API specification since it describes the fields you need to pass and their meaning.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Authorize in the <a href="https://api.example.com/#/backend-api/servers" target="_blank" rel="noopener">Backend API Swagger</a> using your Active Directory credentials. Read more <a href="https://www.example.com" target="_blank" rel="noopener">here</a>.</p>
+</li>
+<li>
+<p>Check the <code>multipleQuantity</code> field in the endpoint response to see the changes.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="rename"><a class="anchor" href="#rename"></a>Rename</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You may need this option, for example, to change your Offering name or fix a typo made when creating this Offering entity.</p>
+</div>
+<div class="paragraph">
+<p>To change the Offering name, follow these steps:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Authorize in the <a href="https://api.example.com/#/backend-api/servers" target="_blank" rel="noopener">Backend API Swagger</a> using your Active Directory credentials. Read more <a href="https://www.example.com" target="_blank" rel="noopener">here</a>.</p>
+</li>
+<li>
+<p>Prepare a payload according to the <code>ChangeName</code> example in the <a href="https://api.example.com/#/backend-api/post-/offering/update" target="_blank" rel="noopener"><code>/offering/update</code> API endpoint</a> and send the request:</p>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>To see all available examples in the API specification, click on the <strong>Example</strong> dropdown.</p>
+</div>
+<div class="paragraph">
+<p>Pay attention to the request schema in the API specification since it describes the fields you need to pass and their meaning.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>Authorize in the <a href="https://api.example.com/#/backend-api/servers" target="_blank" rel="noopener">Backend API Swagger</a> using your Active Directory credentials. Read more <a href="https://www.example.com" target="_blank" rel="noopener">here</a>.</p>
+</li>
+<li>
+<p>Check the <code>name</code> field in the endpoint response to see the changes.</p>
+</li>
+</ol>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Don&#8217;t forget to update the localization resource for your Offering after the change to ensure that the localization corresponds to the updated name.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="enable-usage-based-configuration"><a class="anchor" href="#enable-usage-based-configuration"></a>Enable usage-based configuration</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You may need this functionality to show a separate screen where customers can select various pricing plans of your Offering and pre-configure your product before they purchase it.</p>
+</div>
+<div class="paragraph">
+<p>For example, select various plan options and configure the number of lines and the amount of minutes included in a phone plan.</p>
+</div>
+<div class="paragraph">
+<p>This is a minimal recommended setup for Offerings using the usage-based billing model.</p>
+</div>
+<div class="paragraph">
+<p>To enable usage-based configuration, follow these steps:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Authorize in the <a href="https://api.example.com/#/backend-api/servers" target="_blank" rel="noopener">Backend API Swagger</a> using your Active Directory credentials. Read more <a href="https://www.example.com" target="_blank" rel="noopener">here</a>.</p>
+</li>
+<li>
+<p>Prepare a payload according to the <code>EnableUsageBasedConfiguration</code> example in the <a href="https://api.example.com/#/backend-api/post-/offering/update" target="_blank" rel="noopener"><code>/offering/update</code> API endpoint</a> and send the request:</p>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>To see all available examples in the API specification, click on the <strong>Example</strong> dropdown.</p>
+</div>
+<div class="paragraph">
+<p>Pay attention to the request schema in the API specification since it describes the fields you need to pass and their meaning.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>Authorize in the <a href="https://api.example.com/#/backend-api/servers" target="_blank" rel="noopener">Backend API Swagger</a> using your Active Directory credentials. Read more <a href="https://www.example.com" target="_blank" rel="noopener">here</a>.</p>
+</li>
+<li>
+<p>Check the <code>EnableUsageBasedConfiguration</code> field in the endpoint response to see the changes.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="retrieve-offering.html">Retrieve</a></span>
+  <span class="next"><a href="delete-offering.html">Delete</a></span>
+</nav>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script id="site-script" src="../../../_theme/js/site.js" data-ui-root-path="../../../_theme"></script>
+<script async src="../../../_theme/js/vendor/highlight.js"></script>
+<script src="../../../_theme/js/vendor/lunr.js"></script>
+<script src="../../../_theme/js/search-ui.js" id="search-ui-script" data-site-root-path="../../.." data-snippet-length="100" data-stylesheet="../../../_theme/css/search.css"></script>
+<script async src="../../../search-index.js"></script>
+<script src="../../../_theme/js/preloader.js"></script>  </body>
+</html>

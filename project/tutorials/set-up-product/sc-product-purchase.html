@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Integrate your product purchase into the Shopping Cart :: Core Platform Documentation</title>
+    <link rel="canonical" href="https://irynamurashko7.github.io/docs-demo-portfolio/project/tutorials/set-up-product/sc-product-purchase.html">
+    <link rel="prev" href="configure-prepaid-pricing-plan.html">
+    <link rel="next" href="../../how-to/how-to-guides.html">
+    <meta name="generator" content="Antora 3.1.9">
+    <link rel="stylesheet" href="../../../_theme/css/site.css">
+<link rel="icon" href="../../../_theme/img/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="../../../_theme/css/admonitions.css">
+<link rel="stylesheet" href="https://unpkg.com/bpmn-js/dist/assets/bpmn-js.css">
+<link rel="stylesheet" href="../../../_theme/css/tiles.css">
+<script src="https://unpkg.com/bpmn-js/dist/bpmn-viewer.development.js"></script>  </head>
+  <body class="article">
+<script type="module">import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs'; mermaid.initialize({"startOnLoad":true});</script><header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://irynamurashko7.github.io/docs-demo-portfolio">Core Platform Documentation</a>
+      <div class="navbar-item search hide-for-print">
+        <div id="search-field" class="field">
+          <input id="search-input" type="text" placeholder="Search the docs">
+        </div>
+      </div>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item feedback-form" href="#" onclick="linkToForm();">&#x1F4AD Send feedback</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<script>
+  function linkToForm() {
+    window.open("https://docs.google.com/forms/d/e/1FAIpQLScvBMxC9JuhgvpWutLqqXD8kZyblFRfpBMGI8RIhKBRQkbCAw/viewform?entry.1314213330=" + window.location.href);
+  }
+</script>
+<div class="body">
+<div class="nav-container" data-component="project" data-version="master">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../../index.html">Project</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../index.html">Introduction</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../tutorials.html">Tutorials</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="set-up-product.html">Set up your product</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="set-up-prepaid-product.html">Prepaid</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="configure-prepaid-partner.html">Configure a Partner</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="configure-prepaid-offering.html">Configure an Offering</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="configure-prepaid-pricing-plan.html">Configure a Pricing Plan</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="3">
+    <a class="nav-link" href="sc-product-purchase.html">Integrate your product purchase into the Shopping Cart</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Usage-based</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Free</span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Set up an Application</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Set up your product configuration</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Set up your product discovery</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Configure your product marketing</span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../how-to/how-to-guides.html">How-to Guides</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../how-to/partners/manage-partners.html">Manage Partners</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../how-to/partners/update-partner.html">Update</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../how-to/partners/update-default-purchase-settings.html">Update default purchase settings</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../how-to/offerings/manage-offerings.html">Manage Offerings</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../how-to/offerings/create-offering.html">Create</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../how-to/offerings/retrieve-offering.html">Retrieve</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../how-to/offerings/update-offering.html">Update</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../how-to/offerings/update-offering.html#add-categories">Add categories</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../how-to/offerings/update-offering.html#update-category-list">Update category list</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../how-to/offerings/update-offering.html#remove-categories">Remove categories</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../how-to/offerings/update-offering.html#activate-deactivate">Activate/deactivate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../how-to/offerings/update-offering.html##allow-restrict-multiple-quantity">Allow/restrict multiple quantity for items</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../how-to/offerings/update-offering.html#rename">Rename</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../how-to/offerings/update-offering.html#enable-usage-based-configuration">Enable usage-based configuration</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../how-to/offerings/delete-offering.html">Delete</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Customize your Shopping Cart integration</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Manage assets</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Manage billing strategies</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Manage categories</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Manage localization</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Manage orders</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Manage parameters</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Manage price calculation rules</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Manage pricing plan durations</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Manage pricing plans</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Manage subscriptions</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Manage webhooks</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Manage widgets</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Work with prices</span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../explanations/explanations.html">Explanations</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Assets</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Configuration</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Localization</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../explanations/offerings/overview.html">Offerings</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Orders</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../explanations/pricing-plans/overview.html">Pricing Plans</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../explanations/shopping-cart/overview.html">Shopping Cart</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../explanations/shopping-cart/flows/shopping-cart-flows.html">Flows</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../explanations/shopping-cart/flows/high-level.html">High-level Flow</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Product Purchase Flow</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Renewal Flow</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Update Flow</span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Widgets</span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Subscriptions</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../explanations/ui-fragments/overview.html">UI fragments</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Applications</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Embedded Panels</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Landing Pages</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Shared UI</span>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Glossary</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../glossary/glossary.html">Glossary</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../references/references.html">References</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">API Specifications</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../references/api/create-offering.html">Create an Offering</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Default Widgets</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../references/events/events.html">Events</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Browser Push Notifications</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Event Bus</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Message Bus</span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Localization Resources</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Shared Libraries</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../references/webhooks/webhooks.html">Webhooks</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../references/webhooks/shopping-cart-webhooks.html">Shopping Cart Webhooks</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../changelog.html">Changelog</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Project</span>
+    <span class="version">master</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../../index.html">Project</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../index.html">master</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../index.html">Project</a></li>
+    <li><a href="../tutorials.html">Tutorials</a></li>
+    <li><a href="set-up-product.html">Set up your product</a></li>
+    <li><a href="set-up-prepaid-product.html">Prepaid</a></li>
+    <li><a href="sc-product-purchase.html">Integrate your product purchase into the Shopping Cart</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="">Edit this Page</a></div>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Integrate your product purchase into the Shopping Cart</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <em><a href="https://www.example.com" target="_blank" rel="noopener">Shopping Cart</a></em> allows customers to purchase the products they have added from the partner pages.</p>
+</div>
+<div class="paragraph">
+<p>You can read more about the Shopping Cart in the <a href="../../explanations/shopping-cart/overview.html" class="xref page"><span class="menuseq"><b class="menu">Explanations</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Shopping Cart</b></span></a> section.</p>
+</div>
+<div class="paragraph">
+<p>After you complete the following steps, customers should be able to add and then purchase your Offering instances via the Shopping Cart.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="before-you-start"><a class="anchor" href="#before-you-start"></a>Before you start</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Before proceeding with the integration of product purchases into the Shopping Cart, make sure to:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="configure-prepaid-pricing-plan.html" class="xref page">Configure your Pricing Plan</a>.</p>
+</li>
+<li>
+<p>Check that your Pricing Plan price is calculated successfully. You can find the instructions <a href="configure-prepaid-pricing-plan.html#checklist-for-moving-on" class="xref page">here</a>.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="shopping-cart-integration"><a class="anchor" href="#shopping-cart-integration"></a>Shopping Cart Integration</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="set-up-webhook"><a class="anchor" href="#set-up-webhook"></a>Step 1: Set up your Order Processing webhook</h3>
+<div class="paragraph">
+<p>Set up an endpoint to process requests from the Core Platform during order processing.</p>
+</div>
+<div class="admonitionblock note info">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="info"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>To learn how to create a new service, check out the <a href="https://www.example.com">Create a service</a> document.</p>
+</div>
+<div class="paragraph">
+<p>Consider the <a href="https://www.example.com">Authorization</a> used for service-to-service communication in the Project when creating your service.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>The endpoint must support the following interfaces:</p>
+</div>
+<details id="order-processing-webhook-request">
+<summary class="title">Order Processing webhook request interface. Click to see more details.</summary>
+<div class="content">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">// Code block removed due to NDA restrictions.</code></pre>
+</div>
+</div>
+</div>
+</details>
+<details id="order-processing-webhook-response">
+<summary class="title">Order Processing webhook response interface. Click to see more details.</summary>
+<div class="content">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">// Code block removed due to NDA restrictions.</code></pre>
+</div>
+</div>
+</div>
+</details>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Your endpoint must respond within the timeout required for this webhook. See the <a href="https://www.example.com" target="_blank" rel="noopener">Endpoint Timeouts</a> document for the exact value.</p>
+</div>
+<div class="paragraph">
+<p>If your endpoint does not respond in time, the Core Platform treats the request as failed and proceeds according to the corresponding failure-handling flow for this webhook.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Partners <strong>must support processing of multiple order items per one call</strong>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sect3">
+<h4 id="checklist"><a class="anchor" href="#checklist"></a>Checklist</h4>
+<div class="paragraph">
+<p>Once completed, you should have an endpoint that can accept requests according to the supported <a href="#order-processing-webhook-request">request interface</a> and respond according to the supported <a href="#order-processing-webhook-response">response interface</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="register-webhook"><a class="anchor" href="#register-webhook"></a>Step 2: Register your Order Processing webhook</h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Authorize in the <a href="https://api.example.com/#/backend-api/auth" target="_blank" rel="noopener">Backend API Swagger</a> using your Active Directory credentials.
+Read more <a href="https://www.example.com" target="_blank" rel="noopener">here</a>.</p>
+</li>
+<li>
+<p>Prepare a payload for your endpoint according to the <code>CreateOrderProcessingWebhook</code> example in the <a href="https://api.example.com/#/backend-api/post-/webhook/create" target="_blank" rel="noopener"><code>/webhook/create</code> API endpoint</a> and send the request.</p>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>To see all available examples in the API specification, click on the <strong>Example</strong> dropdown.</p>
+</div>
+<div class="paragraph">
+<p>Pay attention to the request schema in the API specification since it describes the fields you need to pass and their meaning.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>Keep the <code>id</code> field value (unique identifier of your webhook) from the endpoint response since you will need it to test your webhook.</p>
+</li>
+</ol>
+</div>
+<div class="sect3">
+<h4 id="checklist-2"><a class="anchor" href="#checklist-2"></a>Checklist</h4>
+<div class="paragraph">
+<p>Once completed, you should have:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>A created and registered webhook for processing items in the Order Processing phase</p>
+</li>
+<li>
+<p>Your webhook ID</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>To test your webhook and ensure that it responds as expected, follow these steps:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Prepare the payload you plan to receive at your webhook endpoint. It must correspond to the supported <a href="#order-processing-webhook-request">request interface</a>.</p>
+</li>
+<li>
+<p>Use the prepared payload for the <code>payload</code> field when testing your webhook.</p>
+</li>
+<li>
+<p>Check the response. It must return the result of order processing on your side and correspond to the supported <a href="#order-processing-webhook-response">response interface</a>.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="subscribe-events"><a class="anchor" href="#subscribe-events"></a>Step 3: Subscribe to events required for product purchase</h3>
+<div class="paragraph">
+<p>The Core Platform publishes an <em>Event</em> when something occurs that partners may need to know about, so they can take the necessary actions on their side (for example, subscription renewal).</p>
+</div>
+<div class="paragraph">
+<p>To subscribe to the events required for product purchase, follow these steps:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Configure your system to process the following events:</p>
+<details>
+<summary class="title">For a subscription Offering. Click to see the list.</summary>
+<div class="content">
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p><a href="https://events.example.com/backend-api/messages/#activated" target="_blank" rel="noopener"><code>backend-api.activated</code> event</a>.</p>
+</li>
+<li>
+<p><a href="https://events.example.com/backend-api/messages/#deactivated" target="_blank" rel="noopener"><code>backend-api.deactivated</code> event</a>.</p>
+</li>
+<li>
+<p><a href="https://events.example.com/backend-api/messages/#subscriptionRenewed" target="_blank" rel="noopener"><code>backend-api.subscriptionRenewed</code> event</a>.</p>
+</li>
+<li>
+<p><a href="https://events.example.com/backend-api/messages/#subscriptionExpirationDatePassed" target="_blank" rel="noopener"><code>backend-api.subscriptionExpirationDatePassed</code> event</a>.</p>
+</li>
+</ol>
+</div>
+</div>
+</details>
+<details>
+<summary class="title">For a single-purchase Offering. Click to see the list.</summary>
+<div class="content">
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p><a href="https://events.example.com/backend-api/messages/#activated" target="_blank" rel="noopener"><code>backend-api.activated</code> event</a>.</p>
+</li>
+<li>
+<p><a href="https://events.example.com/backend-api/messages/#deactivated" target="_blank" rel="noopener"><code>backend-api.deactivated</code> event</a>.</p>
+</li>
+</ol>
+</div>
+</div>
+</details>
+</li>
+<li>
+<p>Subscribe to events via the <a href="https://www.example.com" target="_blank" rel="noopener">Event Bus</a> to receive notifications about the subscription state.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="integrate-with-core-platform-sdk"><a class="anchor" href="#integrate-with-core-platform-sdk"></a>Step 4: Add a purchase button to your page</h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Complete the general Core Platform SDK setup according to the instructions <a href="https://www.example.com" target="_blank" rel="noopener">here</a>.</p>
+</li>
+<li>
+<p>Integrate the <a href="https://www.example.com" target="_blank" rel="noopener">shared <code>AddItemButton</code> component</a> into your UI to implement a purchase button.</p>
+</li>
+<li>
+<p>Use the <a href="https://www.example.com" target="_blank" rel="noopener"><code>addItem</code> method</a> according to one of the following examples to add an item to the Shopping Cart on the button click:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p><a href="https://www.example.com" target="_blank" rel="noopener"><code>Add a subscription Offering item</code> example</a>: for an item associated with a subscription Offering.</p>
+</li>
+<li>
+<p><a href="https://www.example.com" target="_blank" rel="noopener"><code>Add a single-purchase Offering item</code> example</a>: for an item associated with a single-purchase Offering.</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+<div class="sect3">
+<h4 id="checklist-3"><a class="anchor" href="#checklist-3"></a>Checklist</h4>
+<div class="paragraph">
+<p>Once completed, you should have a button on your UI that adds your product to the Shopping Cart for purchase.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="checklist-for-moving-on"><a class="anchor" href="#checklist-for-moving-on"></a>Checklist for moving on</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>After completing this tutorial, you should have a product integrated into the Shopping Cart with the basic settings that you can use as the basis for your integration.</p>
+</div>
+<div class="paragraph">
+<p>To check that your setup is correct, follow these steps:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Log in to the <a href="https://www.example.com">Project</a>.</p>
+</li>
+<li>
+<p>Make sure you have enough funds for the test.</p>
+</li>
+<li>
+<p>Go to your page.</p>
+</li>
+<li>
+<p>Click the <b class="button">Add to cart</b> button to add the item to the Shopping Cart.</p>
+</li>
+<li>
+<p>Go to the <a href="https://www.example.com" target="_blank" rel="noopener">Shopping Cart</a>.</p>
+</li>
+<li>
+<p>Proceed with the item purchase.</p>
+</li>
+</ol>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>You can hide the purchase button from customers on your page during the development and while adding more integration settings.</p>
+</div>
+<div class="paragraph">
+<p>Check the <span class="menuseq"><b class="menu">How-to Guides</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="submenu">Customize your Shopping Cart integration</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Add an item in development to the Shopping Cart</b></span> section to learn how to test your product purchases during development.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="troubleshooting"><a class="anchor" href="#troubleshooting"></a>Troubleshooting</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>While completing this tutorial, you may face the following issues:</p>
+</div>
+<details>
+<summary class="title"><code>PartnerWebhookRequestTimeoutError. Partner&#8217;s webhook request timeout</code> error. Click to see more details.</summary>
+<div class="content">
+<div class="paragraph">
+<p><strong>When occurs:</strong></p>
+</div>
+<div class="paragraph">
+<p>During order processing, after the Core Platform has sent a request to your webhook</p>
+</div>
+<div class="paragraph">
+<p><strong>Reason:</strong></p>
+</div>
+<div class="paragraph">
+<p>Your webhook endpoint did not respond within the expected time window.</p>
+</div>
+<div class="paragraph">
+<p><strong>How to fix:</strong></p>
+</div>
+<div class="paragraph">
+<p>To fix this issue, follow these steps:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Check if the product instance is created in your services:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p><strong>Created</strong>: activate the associated Customer Item via the <a href="https://api.example.com/#/backend-api/post-/customerItem/activate" target="_blank" rel="noopener"><code>/customerItem/activate</code> API endpoint</a>.</p>
+</li>
+<li>
+<p><strong>Not created</strong>: Refund this order item.</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Investigate why your webhook endpoint did not respond within the expected time window. See the <a href="https://www.example.com" target="_blank" rel="noopener">Endpoint Timeouts</a> document for the exact value.</p>
+</li>
+</ol>
+</div>
+</div>
+</details>
+<details>
+<summary class="title"><code>InvalidHookResponseError. Order processing failed for order item #43b2c3a1-5c0d-4761-80f7-f8410235f8de. Product purchase requires further actions.</code> error. Click to see more details.</summary>
+<div class="content">
+<div class="paragraph">
+<p><strong>When occurs:</strong></p>
+</div>
+<div class="paragraph">
+<p>During order processing, after the Core Platform has sent a request to your webhook</p>
+</div>
+<div class="paragraph">
+<p><strong>Reason:</strong></p>
+</div>
+<div class="paragraph">
+<p>Your webhook endpoint returned an invalid answer.</p>
+</div>
+<div class="paragraph">
+<p><strong>How to fix:</strong></p>
+</div>
+<div class="paragraph">
+<p>To fix this issue, follow these steps:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Check if the product instance is created in your services:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p><strong>Created</strong>: activate the associated Customer Item via the <a href="https://api.example.com/#/backend-api/post-/customerItem/activate" target="_blank" rel="noopener"><code>/customerItem/activate</code> API endpoint</a>.</p>
+</li>
+<li>
+<p><strong>Not created</strong>: Refund this order item.</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Make sure your webhook response follows the <a href="#order-processing-webhook-response">supported response interface</a>.</p>
+</li>
+</ol>
+</div>
+</div>
+</details>
+<details>
+<summary class="title"><code>PricingPlanNotFound. Could not find pricing plans with IDs: 777777</code> error. Click to see more details.</summary>
+<div class="content">
+<div class="paragraph">
+<p><strong>When occurs:</strong></p>
+</div>
+<div class="paragraph">
+<p>When adding the item for purchase</p>
+</div>
+<div class="paragraph">
+<p><strong>Reason:</strong></p>
+</div>
+<div class="paragraph">
+<p>You passed an invalid Pricing Plan identifier in the item payload.</p>
+</div>
+<div class="paragraph">
+<p><strong>How to fix:</strong></p>
+</div>
+<div class="paragraph">
+<p>Pass your Pricing Plan identifier when adding the item for purchase.</p>
+</div>
+</div>
+</details>
+<details>
+<summary class="title"><code>Request validation error. Pricing Plan Duration ID must be a `string</code> type, but the final value was: <code>1234</code>.` error. Click to see more details.</summary>
+<div class="content">
+<div class="paragraph">
+<p><strong>When occurs:</strong></p>
+</div>
+<div class="paragraph">
+<p>When adding the item for purchase</p>
+</div>
+<div class="paragraph">
+<p><strong>Reason:</strong></p>
+</div>
+<div class="paragraph">
+<p>You passed the Pricing Plan Duration identifier in an invalid format.</p>
+</div>
+<div class="paragraph">
+<p><strong>How to fix:</strong></p>
+</div>
+<div class="paragraph">
+<p>Pass the Pricing Plan Duration identifier in UUIDv4 format when adding the item for purchase.</p>
+</div>
+</div>
+</details>
+<details>
+<summary class="title"><code>PricingPlanDurationNotFound. Could not find pricing plan durations with IDs: #43b2c3a1-5c0d-4761-80f7-f8410235f8de</code> error. Click to see more details.</summary>
+<div class="content">
+<div class="paragraph">
+<p><strong>When occurs:</strong></p>
+</div>
+<div class="paragraph">
+<p>When adding the item for purchase</p>
+</div>
+<div class="paragraph">
+<p><strong>Reason:</strong></p>
+</div>
+<div class="paragraph">
+<p>You passed a non-existent Pricing Plan Duration identifier.</p>
+</div>
+<div class="paragraph">
+<p><strong>How to fix:</strong></p>
+</div>
+<div class="paragraph">
+<p>Pass your Pricing Plan Duration identifier when adding the item for purchase.</p>
+</div>
+</div>
+</details>
+<details>
+<summary class="title"><code>InvalidPricingPlanParams. Error validating pricing plan params</code> error. Click to see more details.</summary>
+<div class="content">
+<div class="paragraph">
+<p><strong>When occurs:</strong></p>
+</div>
+<div class="paragraph">
+<p>When adding the item for purchase</p>
+</div>
+<div class="paragraph">
+<p><strong>Reason:</strong></p>
+</div>
+<div class="paragraph">
+<p>You tried passing the value for a Parameter of the <code>variable</code> type that is not used in the associated Price Calculation Rule.</p>
+</div>
+<div class="paragraph">
+<p><strong>How to fix:</strong></p>
+</div>
+<div class="paragraph">
+<p>Pass values only for Parameters of the <code>variable</code> type used in the associated Price Calculation Rule.</p>
+</div>
+</div>
+</details>
+<details>
+<summary class="title"><code>InvalidArguments. Purchase item with a subscription pricing plan #123 with multiple durations cannot be without a period</code> error. Click to see more details.</summary>
+<div class="content">
+<div class="paragraph">
+<p><strong>When occurs:</strong></p>
+</div>
+<div class="paragraph">
+<p>When adding the item for purchase</p>
+</div>
+<div class="paragraph">
+<p><strong>Reason:</strong></p>
+</div>
+<div class="paragraph">
+<p>Your Pricing Plan has several associated Pricing Plan Durations, and you did not pass the identifier of the Pricing Plan Duration to be used for the item.</p>
+</div>
+<div class="paragraph">
+<p><strong>How to fix:</strong></p>
+</div>
+<div class="paragraph">
+<p>Pass the identifier of the Pricing Plan Duration to be used when adding the item for purchase.</p>
+</div>
+</div>
+</details>
+<details>
+<summary class="title"><code>InvalidArguments. Pricing Plan Duration cannot be applied</code> error. Click to see more details.</summary>
+<div class="content">
+<div class="paragraph">
+<p><strong>When occurs:</strong></p>
+</div>
+<div class="paragraph">
+<p>When adding the item for purchase</p>
+</div>
+<div class="paragraph">
+<p><strong>Reason:</strong></p>
+</div>
+<div class="paragraph">
+<p>You tried passing a Pricing Plan Duration in the item payload for a Pricing Plan associated with a single-purchase Offering.</p>
+</div>
+<div class="paragraph">
+<p><strong>How to fix:</strong></p>
+</div>
+<div class="paragraph">
+<p>Skip the Pricing Plan Duration field when adding an item associated with a single-purchase Offering.</p>
+</div>
+</div>
+</details>
+</div>
+</div>
+<div class="sect1">
+<h2 id="next-steps"><a class="anchor" href="#next-steps"></a>Next Steps</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Once you have integrated your product purchases into the Shopping Cart, you have a basic integration.
+Depending on your product-specific requirements, the next steps may be the following:</p>
+</div>
+<details>
+<summary class="title">Customize your entity settings. Click to see more details</summary>
+<div class="content">
+<div class="paragraph">
+<p>You may need more settings for the entities you have set up in this tutorial section.</p>
+</div>
+<div class="paragraph">
+<p>To find out possible customization options, check the following How-to Guide sections:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="../../how-to/partners/manage-partners.html" class="xref page">Manage Partners</a></p>
+</li>
+<li>
+<p><a href="../../how-to/offerings/manage-offerings.html" class="xref page">Manage Offerings</a></p>
+</li>
+<li>
+<p>Manage Pricing Plans</p>
+</li>
+<li>
+<p>Manage Pricing Plan Durations</p>
+</li>
+<li>
+<p>Manage Price Calculation Rules</p>
+</li>
+<li>
+<p>Manage Parameters</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>To learn more about these entities, check the following Explanation sections:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Partners</p>
+</li>
+<li>
+<p><a href="../../explanations/offerings/overview.html" class="xref page">Offerings</a></p>
+</li>
+<li>
+<p><a href="../../explanations/pricing-plans/overview.html" class="xref page">Pricing Plans</a></p>
+</li>
+<li>
+<p>Pricing Plan Durations</p>
+</li>
+<li>
+<p>Price Calculation Rules</p>
+</li>
+<li>
+<p>Parameters</p>
+</li>
+</ul>
+</div>
+</div>
+</details>
+<details>
+<summary class="title">Customize your Shopping Cart integration. Click to see more details.</summary>
+<div class="content">
+<div class="paragraph">
+<p>You may need more custom look and feel and functionality for your product in the Shopping Cart.</p>
+</div>
+<div class="paragraph">
+<p>To find possible customization options, go to the <span class="menuseq"><b class="menu">How-to Guides</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Customize your Shopping Cart integration</b></span> section.</p>
+</div>
+<div class="paragraph">
+<p>To learn more about the Shopping Cart and how it works, go to the <a href="../../explanations/shopping-cart/overview.html" class="xref page"><span class="menuseq"><b class="menu">Explanations</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Shopping Cart</b></span></a> section.</p>
+</div>
+</div>
+</details>
+<details>
+<summary class="title">Add localization. Click to see more details.</summary>
+<div class="content">
+<div class="paragraph">
+<p>Project supports several languages for customer convenience.</p>
+</div>
+<div class="paragraph">
+<p>Go to the <span class="menuseq"><b class="menu">Explanations</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Localization</b></span> section to learn more about localization.</p>
+</div>
+<div class="paragraph">
+<p>To learn how to manage your entity localization, go to the <span class="menuseq"><b class="menu">How-to Guides</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Manage Localization</b></span> section.</p>
+</div>
+</div>
+</details>
+<details>
+<summary class="title">Add assets for your products. Click to see more details.</summary>
+<div class="content">
+<div class="paragraph">
+<p>You may want to have your branded icons, colors, and images to be used for your entities on Project pages.</p>
+</div>
+<div class="paragraph">
+<p>Go to the <span class="menuseq"><b class="menu">Explanations</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Assets</b></span> section to learn more about the asset system.</p>
+</div>
+<div class="paragraph">
+<p>To learn how to manage your entity assets, go to the <span class="menuseq"><b class="menu">How-to Guides</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Manage Assets</b></span> section.</p>
+</div>
+</div>
+</details>
+<details>
+<summary class="title">Add categories for your Offering. Click to see more details</summary>
+<div class="content">
+<div class="paragraph">
+<p>A <em>Category</em> is an entity the Project pages use to group Offerings and Applications for rendering on the UI. For example, the Shopping Cart pages can group Offerings by categories such as Phone Lines, Voicemail, etc.</p>
+</div>
+<div class="paragraph">
+<p>First of all, an Offering entity needs a <em>primary category</em>.</p>
+</div>
+<div class="paragraph">
+<p>A <em>primary category</em> defines the section where the Offering or Application must always belong. All other categories are <em>secondary</em>.</p>
+</div>
+<div class="paragraph">
+<p>Check the <span class="menuseq"><b class="menu">Explanations</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Categories</b></span> document to learn more about categories.</p>
+</div>
+<div class="paragraph">
+<p>Go to the <span class="menuseq"><b class="menu">How-to Guides</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Manage Categories</b></span> section to learn how to work with the categories.</p>
+</div>
+</div>
+</details>
+<details>
+<summary class="title">Set up an Application. Click to see more details.</summary>
+<div class="content">
+<div class="paragraph">
+<p>An <em>Application</em> is a UI fragment where users can manage and configure product instances they own or change system and account settings.</p>
+</div>
+<div class="paragraph">
+<p>The Core Platform uses its discovery system to find such UI fragments.</p>
+</div>
+<div class="paragraph">
+<p>This discovery system uses associations between various entities (Partners, Offerings, pricing plans, etc.) and Applications to find Applications the customer can use for a particular product instance (for example, Phone Number List, Voicemail Manager, etc.) and render them.</p>
+</div>
+<div class="paragraph">
+<p>The My Subscriptions Application shows all product instances associated with <em>subscription Offerings</em> except for phone numbers by default.
+Phone numbers have a dedicated Application - Phone Number List. So, for a subscription Offering, you may delay the Application development.</p>
+</div>
+<div class="paragraph">
+<p>Product instances associated with <em>single-purchase Offerings</em> require an associated primary Application so users have a place to manage them.</p>
+</div>
+<div class="paragraph">
+<p>To learn about Applications, check the <span class="menuseq"><b class="menu">Explanations</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Applications</b></span> documentation.</p>
+</div>
+<div class="paragraph">
+<p>To start setting up your first Application, follow the instructions in the <span class="menuseq"><b class="menu">Tutorials</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Set up an Application</b></span>.</p>
+</div>
+</div>
+</details>
+<details>
+<summary class="title">Set up your product configuration. Click to see more details.</summary>
+<div class="content">
+<div class="paragraph">
+<p><em>Configuration</em> is a service that teaches users how to use and configure their purchased product instances (Customer Items).</p>
+</div>
+<div class="paragraph">
+<p>The UI representation of this service is the <em>Configuration Modal</em>, which is used for newly purchased Customer Items and shows the Welcome Screen with first-time user guidance.</p>
+</div>
+<div class="paragraph">
+<p>Depending on the partner settings, the modal can provide users with options to configure the Customer Item and provide additional instructions to the user.</p>
+</div>
+<div class="paragraph">
+<p>Read more about it in the <span class="menuseq"><b class="menu">Explanations</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Configuration</b></span> documentation.</p>
+</div>
+<div class="paragraph">
+<p>To start setting up your product configuration, follow the instructions in the <span class="menuseq"><b class="menu">Tutorials</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Set up your product configuration</b></span>.</p>
+</div>
+</div>
+</details>
+</div>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="configure-prepaid-pricing-plan.html">Configure a Pricing Plan</a></span>
+  <span class="next"><a href="../../how-to/how-to-guides.html">How-to Guides</a></span>
+</nav>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script id="site-script" src="../../../_theme/js/site.js" data-ui-root-path="../../../_theme"></script>
+<script async src="../../../_theme/js/vendor/highlight.js"></script>
+<script src="../../../_theme/js/vendor/lunr.js"></script>
+<script src="../../../_theme/js/search-ui.js" id="search-ui-script" data-site-root-path="../../.." data-snippet-length="100" data-stylesheet="../../../_theme/css/search.css"></script>
+<script async src="../../../search-index.js"></script>
+<script src="../../../_theme/js/preloader.js"></script>  </body>
+</html>

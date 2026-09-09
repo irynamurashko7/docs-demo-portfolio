@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+<g fill="none" stroke="#000" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M38 60 C62 48 86 48 110 60 V205 C86 193 62 193 38 205 Z"/>
+  <path d="M110 60 C134 48 158 48 182 60 V205 C158 193 134 193 110 205 Z"/>
+  <path d="M182 60 C196 53 208 55 218 62 V202 C206 195 194 195 182 205"/>
+  <path d="M61 91 H88"/>
+  <path d="M61 113 H91"/>
+  <path d="M61 135 H84"/>
+  <path d="M132 91 H159"/>
+  <path d="M132 113 H163"/>
+  <path d="M132 135 H156"/>
+  <path d="M196 94 H208"/>
+  <path d="M196 116 H208"/>
+</g>
+<g fill="#000" font-family="Arial, sans-serif" font-size="34" font-weight="700">
+  <text x="60" y="174">A</text>
+  <text x="132" y="174">B</text>
+</g>
+</svg>
