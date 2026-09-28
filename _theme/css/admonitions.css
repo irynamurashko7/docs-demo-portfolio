@@ -1,14 +1,14 @@
 
 
 :root {
-  --info: #4ec7ff;
-  --info-bg: #e8f6fd;
-  --note: #FBA53C;
-  --note-bg: #fff9ea;
-  --tip: #47B367;
-  --tip-bg: #ebf6ea;
-  --warning: #ff634c;
-  --warning-bg: #fff0ee;
+  --info: #62cdff;
+  --info-bg: #eaf6fd;
+  --note: #f3a94f;
+  --note-bg: #fff9ec;
+  --tip: #59ba76;
+  --tip-bg: #edf6ec;
+  --warning: #ff725d;
+  --warning-bg: #fff1ef;
 }
 
 .doc .admonitionblock.note.info td.icon i.icon-note[title="info"] {
